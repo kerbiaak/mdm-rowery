@@ -1,13 +1,10 @@
 import {
   Backpack,
-  Baby,
   BadgeCheck,
-  Building2,
   CircleDot,
   ClipboardCheck,
   Clock,
   Cog,
-  Compass,
   Flashlight,
   Gauge,
   GlassWater,
@@ -15,14 +12,11 @@ import {
   HardHat,
   Lock,
   MapPin,
-  Mountain,
   PackageOpen,
   ShieldCheck,
-  ShoppingBag,
   Sun,
   Umbrella,
   Wrench,
-  Zap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -66,7 +60,6 @@ export type Category = {
   desc: string;
   img: string;
   fit: "contain" | "cover";
-  icon: LucideIcon;
   href: string;
   features: string[];
 };
@@ -75,7 +68,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "gorskie",
     title: "Rowery górskie",
-    icon: Mountain,
     img: "/images/bike-mtb.webp",
     fit: "contain",
     href: "/oferta#gorskie",
@@ -89,7 +81,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "elektryczne",
     title: "Rowery elektryczne",
-    icon: Zap,
     img: "/images/bike-city.webp",
     fit: "contain",
     href: "/oferta#elektryczne",
@@ -103,7 +94,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "trekkingowe",
     title: "Rowery trekkingowe",
-    icon: Compass,
     img: "/images/bike-gravel.jpg",
     fit: "contain",
     href: "/oferta#trekkingowe",
@@ -117,7 +107,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "miejskie",
     title: "Rowery miejskie",
-    icon: Building2,
     img: "/images/bike-trekking.webp",
     fit: "contain",
     href: "/oferta#miejskie",
@@ -131,7 +120,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "dzieciece",
     title: "Rowery dziecięce",
-    icon: Baby,
     img: "/images/bike-kids.webp",
     fit: "contain",
     href: "/oferta#dzieciece",
@@ -145,7 +133,6 @@ export const CATEGORIES: Category[] = [
   {
     slug: "akcesoria",
     title: "Akcesoria i części",
-    icon: ShoppingBag,
     img: "/images/accessories.jpg",
     fit: "cover",
     href: "/akcesoria",
@@ -223,19 +210,19 @@ export type Testimonial = { name: string; text: string; stars: number };
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Marek",
+    name: "Użytkownik Google",
     stars: 5,
-    text: "Rower po przeglądzie działa jak nowy, a termin udało się złapać z dnia na dzień. Widać, że robi to ktoś, kto na rowerach zjadł zęby.",
+    text: "Świetny serwis i bardzo dobry mechanik rowerowy! Wszystko zostało zrobione szybko, profesjonalnie i bez żadnych problemów. Bardzo dobre podejście do klienta i fachowa robota. Z czystym sumieniem mogę polecić!",
   },
   {
-    name: "Agnieszka",
+    name: "Arleta",
     stars: 5,
-    text: "Kupowaliśmy córce pierwszy rower. Pan Michał cierpliwie dobrał rozmiar, wyregulował wszystko na miejscu i jeszcze wytłumaczył małej zasady bezpieczeństwa.",
+    text: "Polecam, wymiana opon i serwis bardzo szybko i sprawnie.",
   },
   {
-    name: "Tomasz",
+    name: "Adam Lisek",
     stars: 5,
-    text: "Uczciwe podejście, jakiego dziś się nie spotyka. Zamiast wciskać nowe części, naprawili dokładnie to, co było do naprawy. Ceny bardzo rozsądne.",
+    text: "Super sklep, każda część na miejscu.",
   },
 ];
 
