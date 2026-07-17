@@ -71,7 +71,9 @@ for (const n of [1, 2, 3, 4, 5, 6]) {
   const file = path.join(OUT, `service-${n}.jpg`);
   await sharp(src(`${n}.png`))
     .resize({ width: 1000 })
-    .jpeg({ quality: 78, mozjpeg: true })
+    .blur(7)
+    .modulate({ saturation: 0.94 })
+    .jpeg({ quality: 74, mozjpeg: true })
     .toFile(file);
   await logFile(file);
 }
