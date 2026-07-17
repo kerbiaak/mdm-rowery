@@ -35,9 +35,6 @@ export function AccessoryGroups() {
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-600">
                   {group.desc}
                 </p>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-400">
-                  {group.tags}
-                </p>
               </div>
             </StaggerItem>
           ))}
