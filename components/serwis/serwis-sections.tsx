@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { Accent, SectionHeader } from "@/components/shared/section-header";
 import { Accordion } from "@/components/ui/accordion";
@@ -22,13 +23,25 @@ export function ServiceGrid() {
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
             <StaggerItem key={service.title} className="h-full">
-              <div className="group flex h-full flex-col justify-between gap-10 border border-black/[0.08] bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-ink/40 hover:shadow-[0_28px_56px_-28px_rgba(0,0,0,0.22)] sm:aspect-square sm:p-8">
-                <service.icon className="size-6 text-brand" strokeWidth={1.7} aria-hidden />
-                <div>
-                  <h3 className="font-display text-lg font-bold tracking-tight sm:text-xl">
+              <div className="group relative flex h-full flex-col justify-between gap-10 overflow-hidden border border-black/[0.08] p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_32px_64px_-28px_rgba(0,0,0,0.45)] sm:aspect-square sm:p-8">
+                <Image
+                  src={service.img}
+                  alt=""
+                  aria-hidden
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/45 to-ink/25"
+                />
+                <service.icon className="relative size-6 text-white" strokeWidth={1.7} aria-hidden />
+                <div className="relative">
+                  <h3 className="font-display text-lg font-bold tracking-tight text-white sm:text-xl">
                     {service.title}
                   </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-600">
+                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-300">
                     {service.desc}
                   </p>
                 </div>

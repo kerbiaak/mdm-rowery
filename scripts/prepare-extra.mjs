@@ -66,6 +66,16 @@ await logFile(lightFile);
 const outMeta = await sharp(darkFile).metadata();
 report.push(`logo intrinsic: ${outMeta.width}x${outMeta.height} (trimmed from ${info.width}x${info.height})`);
 
+// --- Service card backgrounds (1.png … 6.png) ---
+for (const n of [1, 2, 3, 4, 5, 6]) {
+  const file = path.join(OUT, `service-${n}.jpg`);
+  await sharp(src(`${n}.png`))
+    .resize({ width: 1000 })
+    .jpeg({ quality: 78, mozjpeg: true })
+    .toFile(file);
+  await logFile(file);
+}
+
 // --- Soft-focus workshop backdrop for the services section ---
 {
   const blurWorkshop = path.join(OUT, "workshop-blur.jpg");
