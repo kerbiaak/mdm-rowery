@@ -53,7 +53,7 @@ export function Hero() {
           src="/images/hero-bike.png"
           alt=""
           width={1175}
-          height={878}
+          height={877}
           priority
           className="h-auto w-full drop-shadow-[0_50px_70px_rgba(0,0,0,0.55)]"
         />
