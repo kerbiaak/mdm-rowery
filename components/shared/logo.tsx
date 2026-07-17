@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -6,42 +7,31 @@ export function Logo({ light, className }: { light?: boolean; className?: string
     <Link
       href="/"
       aria-label="mDM Rowery — strona główna"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("relative inline-flex shrink-0 items-center", className)}
     >
-      <svg viewBox="0 0 34 22" aria-hidden="true" className="h-[1.15rem] w-8 shrink-0">
-        <path
-          d="M6 2.5h26"
-          strokeWidth="3.4"
-          strokeLinecap="round"
-          className={cn(
-            "transition-colors duration-300",
-            light ? "stroke-white" : "stroke-ink"
-          )}
-        />
-        <path d="M0 11h22" stroke="#d11d25" strokeWidth="3.4" strokeLinecap="round" />
-        <path
-          d="M9 19.5h17"
-          strokeWidth="3.4"
-          strokeLinecap="round"
-          className={cn(
-            "transition-colors duration-300",
-            light ? "stroke-white" : "stroke-ink"
-          )}
-        />
-      </svg>
-      <span className="flex flex-col leading-none">
-        <span
-          className={cn(
-            "font-display text-[1.3rem] font-bold italic tracking-tight transition-colors duration-300",
-            light ? "text-white" : "text-ink"
-          )}
-        >
-          m<span className="text-brand">DM</span>
-        </span>
-        <span className="mt-1 text-[0.55rem] font-bold uppercase tracking-[0.42em] text-brand">
-          Rowery
-        </span>
-      </span>
+      <Image
+        src="/images/logo-dark.png"
+        alt="mDM Rowery"
+        width={600}
+        height={318}
+        priority
+        className={cn(
+          "h-10 w-auto transition-opacity duration-300 lg:h-11",
+          light ? "opacity-0" : "opacity-100"
+        )}
+      />
+      <Image
+        src="/images/logo-light.png"
+        alt=""
+        aria-hidden
+        width={600}
+        height={318}
+        priority
+        className={cn(
+          "absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 transition-opacity duration-300 lg:h-11",
+          light ? "opacity-100" : "opacity-0"
+        )}
+      />
     </Link>
   );
 }

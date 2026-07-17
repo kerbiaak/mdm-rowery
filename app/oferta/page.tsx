@@ -20,8 +20,8 @@ export default function OfertaPage() {
   return (
     <>
       <PageHero
-        image="/images/showroom-right.jpg"
-        imageAlt="Rowery ustawione w rzędach w salonie mDM Rowery"
+        image="/images/showroom-right-blur.jpg"
+        imageAlt="Rozmyte wnętrze salonu rowerowego z rzędami rowerów"
         eyebrow="Oferta"
         title={
           <>

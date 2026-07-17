@@ -16,15 +16,13 @@ export function Footer() {
     <footer className="bg-ink text-white">
       <div className="container-x grid gap-12 py-16 sm:py-20 lg:grid-cols-[1.5fr_1fr_1fr_1.3fr] lg:gap-10">
         <div>
-          <div className="inline-flex rounded-2xl bg-white p-3.5">
-            <Image
-              src="/images/logo.png"
-              alt="Logo mDM Rowery"
-              width={220}
-              height={220}
-              className="h-auto w-24"
-            />
-          </div>
+          <Image
+            src="/images/logo-light.png"
+            alt="Logo mDM Rowery"
+            width={600}
+            height={318}
+            className="h-14 w-auto"
+          />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-zinc-400">
             Rodzinny sklep i autoryzowany serwis rowerowy w Pniewach. Od ponad 20 lat pomagamy
             wybrać rower — i dbamy o niego przez kolejne sezony.

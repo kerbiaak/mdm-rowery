@@ -29,8 +29,8 @@ export function Hero() {
         transition={{ duration: 2.2, ease: EASE }}
       >
         <Image
-          src="/images/showroom.jpg"
-          alt="Salon rowerowy mDM Rowery — rzędy rowerów w nowoczesnym wnętrzu"
+          src="/images/showroom-blur.jpg"
+          alt="Rozmyte wnętrze salonu rowerowego z rzędami rowerów"
           fill
           priority
           quality={82}
