@@ -1,20 +1,18 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { Accent, SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
-import { SERVICES } from "@/lib/data";
+import { SERVICES, SERVICE_EXTRAS } from "@/lib/data";
 
 export function HomeServices() {
   return (
-    <section className="relative overflow-hidden bg-ink py-24 text-white sm:py-32">
-      <div
-        aria-hidden
-        className="absolute -right-40 -top-40 size-[480px] rounded-full bg-brand/10 blur-[160px]"
-      />
-      <div className="container-x relative">
-        <div className="flex flex-wrap items-end justify-between gap-8">
+    <section className="bg-ink py-24 text-white sm:py-32">
+      <div className="container-x grid items-start gap-14 lg:grid-cols-[1fr_1.35fr] lg:gap-20">
+        <div>
           <SectionHeader
             dark
             eyebrow="Serwis"
@@ -25,7 +23,7 @@ export function HomeServices() {
             }
             sub="Autoryzowany serwis rowerów i jednośladów. Uczciwa wycena przed naprawą, sprawdzone części i terminy, na których można polegać."
           />
-          <Reveal delay={0.2}>
+          <Reveal delay={0.15} className="mt-9">
             <Button href="/serwis" variant="outlineLight" size="md">
               Zobacz szczegóły
               <ArrowRight
@@ -34,22 +32,46 @@ export function HomeServices() {
               />
             </Button>
           </Reveal>
+          <Reveal delay={0.2} className="mt-12 hidden lg:block">
+            <div className="relative aspect-[4/3] overflow-hidden border border-white/10">
+              <Image
+                src="/images/workshop.jpg"
+                alt="Warsztat serwisowy mDM — rower na stojaku i ściana narzędzi"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
 
-        <Stagger className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="divide-y divide-white/10 border-y border-white/10" step={0.06}>
           {SERVICES.map((service) => (
-            <StaggerItem key={service.title} className="h-full">
-              <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.045] p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-brand/40 hover:bg-white/[0.08]">
-                <div className="flex size-12 items-center justify-center rounded-xl bg-brand/15 text-brand ring-1 ring-brand/25 transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
-                  <service.icon className="size-5" strokeWidth={1.9} aria-hidden />
+            <StaggerItem key={service.title}>
+              <Link
+                href="/serwis"
+                className="group flex items-center justify-between gap-8 py-7"
+              >
+                <div>
+                  <h3 className="font-display text-xl font-bold tracking-tight transition-colors duration-300 group-hover:text-brand sm:text-2xl">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-zinc-400">
+                    {service.desc}
+                  </p>
                 </div>
-                <h3 className="mt-5 font-display text-lg font-bold tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">{service.desc}</p>
-              </div>
+                <ArrowUpRight
+                  className="size-6 shrink-0 -translate-x-1 translate-y-1 text-brand opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                  aria-hidden
+                />
+              </Link>
             </StaggerItem>
           ))}
+          <StaggerItem>
+            <p className="py-6 text-sm text-zinc-500">
+              Dodatkowo: {SERVICE_EXTRAS.join(" · ").toLowerCase()}.
+            </p>
+          </StaggerItem>
         </Stagger>
       </div>
     </section>
