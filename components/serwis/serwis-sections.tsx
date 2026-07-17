@@ -1,11 +1,9 @@
 "use client";
 
-import { Phone } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { Accent, SectionHeader } from "@/components/shared/section-header";
 import { Accordion } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { CONTACT, FAQ, PRICING, PROCESS, SERVICES, SERVICE_EXTRAS } from "@/lib/data";
+import { CONTACT, FAQ, PROCESS, SERVICES, SERVICE_EXTRAS } from "@/lib/data";
 
 export function ServiceGrid() {
   return (
@@ -96,61 +94,9 @@ export function ServiceProcess() {
   );
 }
 
-export function ServicePricing() {
-  return (
-    <section id="cennik" className="scroll-mt-24 bg-white py-24 sm:py-32">
-      <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
-        <div>
-          <SectionHeader
-            eyebrow="Cennik"
-            title={
-              <>
-                Uczciwe <Accent>stawki</Accent>
-              </>
-            }
-            sub="Ceny orientacyjne za robociznę — ostateczną wycenę poznasz zawsze przed rozpoczęciem prac. Koszt części ustalamy osobno."
-          />
-          <Reveal delay={0.15} className="mt-9">
-            <Button href={CONTACT.phoneHref} size="lg">
-              <Phone className="size-4" aria-hidden />
-              Umów termin: {CONTACT.phoneDisplay}
-            </Button>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-5 text-sm text-zinc-500">
-              Drobne naprawy często wykonujemy od ręki, bez zapisów.
-            </p>
-          </Reveal>
-        </div>
-
-        <Reveal delay={0.1}>
-          <ul className="divide-y divide-black/[0.06] overflow-hidden rounded-3xl border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
-            {PRICING.map((row) => (
-              <li
-                key={row.name}
-                className="flex items-baseline justify-between gap-6 px-6 py-5 transition-colors duration-300 hover:bg-mist/60 sm:px-8"
-              >
-                <div>
-                  <p className="font-semibold">{row.name}</p>
-                  {row.detail && (
-                    <p className="mt-1 text-sm text-zinc-500">{row.detail}</p>
-                  )}
-                </div>
-                <p className="whitespace-nowrap font-display font-bold tracking-tight">
-                  {row.price}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
 export function ServiceFaq() {
   return (
-    <section className="bg-mist py-24 sm:py-32">
+    <section className="bg-white py-24 sm:py-32">
       <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
         <SectionHeader
           eyebrow="FAQ"

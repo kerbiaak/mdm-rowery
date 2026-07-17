@@ -27,7 +27,7 @@ export function HomeServices() {
           />
           <Reveal delay={0.2}>
             <Button href="/serwis" variant="outlineLight" size="md">
-              Cennik i szczegóły
+              Zobacz szczegóły
               <ArrowRight
                 className="size-4 transition-transform duration-300 group-hover:translate-x-1"
                 aria-hidden

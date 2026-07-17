@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { ArrowRight, BadgeCheck, ChevronDown, MapPin, Star, Wrench } from "lucide-react";
+import { ArrowRight, ChevronDown, Wrench } from "lucide-react";
 import { EASE } from "@/components/motion/reveal";
 import { SpeedLines } from "@/components/shared/speed-lines";
 import { Button } from "@/components/ui/button";
@@ -86,26 +86,6 @@ export function Hero() {
           </Button>
         </motion.div>
 
-        <motion.div variants={item} className="mt-14 flex flex-wrap gap-3">
-          {[
-            { icon: Star, label: "4,3/5 w Google", starred: true },
-            { icon: BadgeCheck, label: "Autoryzowany serwis" },
-            { icon: MapPin, label: "Pniewy, Wolności 32" },
-          ].map(({ icon: Icon, label, starred }) => (
-            <span
-              key={label}
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md"
-            >
-              <Icon
-                className={
-                  starred ? "size-4 fill-amber-400 text-amber-400" : "size-4 text-brand"
-                }
-                aria-hidden
-              />
-              {label}
-            </span>
-          ))}
-        </motion.div>
       </motion.div>
 
       <motion.div

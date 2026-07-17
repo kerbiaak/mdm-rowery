@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {
   ServiceFaq,
   ServiceGrid,
-  ServicePricing,
   ServiceProcess,
 } from "@/components/serwis/serwis-sections";
 import { CtaBand } from "@/components/shared/cta-band";
@@ -33,7 +32,6 @@ export default function SerwisPage() {
       />
       <ServiceGrid />
       <ServiceProcess />
-      <ServicePricing />
       <ServiceFaq />
       <CtaBand
         word="Serwis"

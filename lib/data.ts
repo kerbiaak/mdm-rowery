@@ -105,8 +105,8 @@ export const CATEGORIES: Category[] = [
     slug: "elektryczne",
     title: "Rowery elektryczne",
     icon: Zap,
-    img: "/images/bike-electric-detail.webp",
-    fit: "cover",
+    img: "/images/bike-city.webp",
+    fit: "contain",
     href: "/oferta#elektryczne",
     desc: "Wspomaganie, które zmienia wszystko. Dojazdy bez potu i wycieczki bez limitu kilometrów.",
     features: [
@@ -119,7 +119,7 @@ export const CATEGORIES: Category[] = [
     slug: "trekkingowe",
     title: "Rowery trekkingowe",
     icon: Compass,
-    img: "/images/bike-trekking.webp",
+    img: "/images/bike-gravel.jpg",
     fit: "contain",
     href: "/oferta#trekkingowe",
     desc: "Komfort na długich dystansach — do pracy, nad jezioro i na weekendową wyprawę za miasto.",
@@ -133,7 +133,7 @@ export const CATEGORIES: Category[] = [
     slug: "miejskie",
     title: "Rowery miejskie",
     icon: Building2,
-    img: "/images/bike-city.webp",
+    img: "/images/bike-trekking.webp",
     fit: "contain",
     href: "/oferta#miejskie",
     desc: "Eleganckie i praktyczne. Niska rama, pełne wyposażenie i wygoda każdego dnia.",
@@ -263,25 +263,6 @@ export const BRANDS = [
   "Continental",
 ] as const;
 
-export type GalleryItem = { img: string; caption: string; span: string };
-
-export const GALLERY: GalleryItem[] = [
-  {
-    img: "/images/showroom.jpg",
-    caption: "Salon sprzedaży",
-    span: "col-span-2 row-span-2",
-  },
-  { img: "/images/workshop.jpg", caption: "Warsztat serwisowy", span: "col-span-2" },
-  { img: "/images/accessories.jpg", caption: "Ściana akcesoriów", span: "" },
-  { img: "/images/parts.jpg", caption: "Części i komponenty", span: "" },
-  { img: "/images/tyres.jpg", caption: "Opony na każdy sezon", span: "col-span-2" },
-  {
-    img: "/images/storefront.jpg",
-    caption: "Wolności 32, Pniewy",
-    span: "col-span-2",
-  },
-];
-
 export type Testimonial = { name: string; text: string; stars: number };
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -299,35 +280,6 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Tomasz",
     stars: 5,
     text: "Uczciwe podejście, jakiego dziś się nie spotyka. Zamiast wciskać nowe części, naprawili dokładnie to, co było do naprawy. Ceny bardzo rozsądne.",
-  },
-];
-
-export type PricingRow = { name: string; detail?: string; price: string };
-
-export const PRICING: PricingRow[] = [
-  {
-    name: "Przegląd podstawowy",
-    detail: "regulacja hamulców i przerzutek, smarowanie, kontrola połączeń",
-    price: "od 100 zł",
-  },
-  {
-    name: "Przegląd rozszerzony",
-    detail: "pełna regulacja z czyszczeniem napędu",
-    price: "od 180 zł",
-  },
-  {
-    name: "Przygotowanie do sezonu",
-    detail: "kompleksowy serwis po zimie",
-    price: "od 150 zł",
-  },
-  { name: "Wymiana dętki lub opony", price: "od 30 zł" },
-  { name: "Centrowanie koła", price: "od 40 zł" },
-  { name: "Wymiana klocków hamulcowych", price: "od 30 zł" },
-  { name: "Regulacja przerzutek", price: "od 40 zł" },
-  {
-    name: "Montaż roweru z kartonu",
-    detail: "złożenie, regulacja i kontrola bezpieczeństwa",
-    price: "od 120 zł",
   },
 ];
 

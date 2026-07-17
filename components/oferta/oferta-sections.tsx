@@ -185,14 +185,14 @@ export function BuyingHelp() {
           </Stagger>
         </div>
         <Reveal delay={0.1}>
-          <div className="overflow-hidden rounded-[2rem] border border-black/[0.06] bg-white shadow-[0_25px_60px_-35px_rgba(0,0,0,0.25)]">
+          <div className="overflow-hidden rounded-[2rem] border border-black/[0.06] shadow-[0_25px_60px_-35px_rgba(0,0,0,0.25)]">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/bike-gravel.jpg"
-                alt="Rower gravelowy na białym tle — jeden z modeli dostępnych w mDM"
+                src="/images/workshop.jpg"
+                alt="Warsztat mDM — regulacja roweru przed wydaniem"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-10"
+                className="object-cover"
               />
             </div>
           </div>

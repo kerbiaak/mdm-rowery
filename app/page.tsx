@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Brands } from "@/components/home/brands";
 import { Categories } from "@/components/home/categories";
-import { Gallery } from "@/components/home/gallery";
 import { Hero } from "@/components/home/hero";
 import { HomeServices } from "@/components/home/services";
 import { Stats } from "@/components/home/stats";
@@ -24,7 +23,6 @@ export default function HomePage() {
       <Brands />
       <HomeServices />
       <WhyUs />
-      <Gallery />
       <Testimonials />
       <CtaBand
         title={
