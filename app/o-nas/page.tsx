@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Stats } from "@/components/home/stats";
 import { Story, Timeline, ValuesGrid } from "@/components/o-nas/o-nas-sections";
 import { CtaBand } from "@/components/shared/cta-band";
 import { PageHero } from "@/components/shared/page-hero";
@@ -27,7 +26,6 @@ export default function ONasPage() {
         lead="Rodzinny sklep rowerowy z Pniew — dwie dekady doświadczenia, autoryzowany serwis i klienci, którzy przyprowadzają do nas swoje dzieci."
       />
       <Story />
-      <Stats />
       <ValuesGrid />
       <Timeline />
       <CtaBand

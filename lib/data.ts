@@ -2,7 +2,6 @@ import {
   Backpack,
   Baby,
   BadgeCheck,
-  Bike,
   Building2,
   CircleDot,
   ClipboardCheck,
@@ -60,20 +59,6 @@ export const HOURS = [
   { days: "Sobota", hours: "09:00 – 13:00", open: true },
   { days: "Niedziela", hours: "nieczynne", open: false },
 ] as const;
-
-export type Stat = {
-  value: number;
-  decimals?: number;
-  suffix?: string;
-  label: string;
-};
-
-export const STATS: Stat[] = [
-  { value: 20, suffix: "+", label: "lat doświadczenia" },
-  { value: 4.3, decimals: 1, label: "ocena klientów w Google" },
-  { value: 1000, suffix: "+", label: "serwisowanych rowerów rocznie" },
-  { value: 6, label: "dni w tygodniu do Twojej dyspozycji" },
-];
 
 export type Category = {
   slug: string;
@@ -214,41 +199,6 @@ export const SERVICE_EXTRAS = [
   "Wymiana opon od ręki",
   "Centrowanie kół",
 ] as const;
-
-export type WhyUsItem = { icon: LucideIcon; title: string; desc: string };
-
-export const WHY_US: WhyUsItem[] = [
-  {
-    icon: BadgeCheck,
-    title: "Doświadczenie od 2003 roku",
-    desc: "Przez nasz warsztat przeszły tysiące rowerów — znamy każdą konstrukcję na pamięć.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Autoryzowany serwis",
-    desc: "Serwisujemy rowery i jednoślady zgodnie z wymogami producentów.",
-  },
-  {
-    icon: HandCoins,
-    title: "Uczciwa wycena",
-    desc: "Koszt znasz przed naprawą. Wymieniamy to, co trzeba — nie to, co się opłaca.",
-  },
-  {
-    icon: Clock,
-    title: "Szybkie terminy",
-    desc: "Drobne naprawy często od ręki, a standardowe przeglądy zwykle w 1–2 dni.",
-  },
-  {
-    icon: Bike,
-    title: "Sprawdzone marki",
-    desc: "Tabou, Kross, Merida, Romet — sprzedajemy rowery, które sami byśmy kupili.",
-  },
-  {
-    icon: MapPin,
-    title: "Na miejscu, w Pniewach",
-    desc: "Bez wysyłek i infolinii. Wpadasz, rozmawiasz i odjeżdżasz sprawnym rowerem.",
-  },
-];
 
 export const BRANDS = [
   "Tabou",

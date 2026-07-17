@@ -11,7 +11,7 @@ export function CategoryCard({ category }: { category: Category }) {
   return (
     <Link
       href={href}
-      className="group flex h-full flex-col overflow-hidden rounded-3xl border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1.5 hover:border-black/10 hover:shadow-[0_32px_64px_-28px_rgba(0,0,0,0.28)]"
+      className="group flex h-full flex-col overflow-hidden border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1.5 hover:border-black/10 hover:shadow-[0_32px_64px_-28px_rgba(0,0,0,0.28)]"
     >
       <div className="relative aspect-square overflow-hidden bg-white">
         <Image

@@ -3,9 +3,7 @@ import { Brands } from "@/components/home/brands";
 import { Categories } from "@/components/home/categories";
 import { Hero } from "@/components/home/hero";
 import { HomeServices } from "@/components/home/services";
-import { Stats } from "@/components/home/stats";
 import { Testimonials } from "@/components/home/testimonials";
-import { WhyUs } from "@/components/home/why-us";
 import { CtaBand } from "@/components/shared/cta-band";
 import { CONTACT } from "@/lib/data";
 
@@ -18,11 +16,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Stats />
       <Categories />
       <Brands />
       <HomeServices />
-      <WhyUs />
       <Testimonials />
       <CtaBand
         title={
