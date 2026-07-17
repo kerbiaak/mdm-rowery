@@ -43,6 +43,23 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-ink/30" />
 
       <motion.div
+        aria-hidden
+        initial={{ opacity: 0, x: reduce ? 0 : 90 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.7, duration: 1.1, ease: EASE }}
+        className="pointer-events-none absolute -right-24 top-[55%] hidden w-[46vw] max-w-[880px] -translate-y-1/2 xl:block"
+      >
+        <Image
+          src="/images/hero-bike.png"
+          alt=""
+          width={1175}
+          height={878}
+          priority
+          className="h-auto w-full drop-shadow-[0_50px_70px_rgba(0,0,0,0.55)]"
+        />
+      </motion.div>
+
+      <motion.div
         variants={container}
         initial="hidden"
         animate="show"
