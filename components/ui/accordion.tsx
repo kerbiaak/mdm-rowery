@@ -12,7 +12,7 @@ export function Accordion({ items, className }: { items: AccordionItem[]; classN
   return (
     <div
       className={cn(
-        "divide-y divide-black/[0.06] overflow-hidden rounded-3xl border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)]",
+        "divide-y divide-black/[0.06] overflow-hidden border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)]",
         className
       )}
     >
@@ -53,11 +53,14 @@ function AccordionRow({
         </span>
         <span
           className={cn(
-            "flex size-9 shrink-0 items-center justify-center rounded-full border border-black/10 text-ink transition-all duration-300",
-            open && "rotate-45 border-brand bg-brand text-white"
+            "flex size-9 shrink-0 items-center justify-center border border-black/10 text-ink transition-all duration-300",
+            open && "border-brand bg-brand text-white"
           )}
         >
-          <Plus className="size-4" aria-hidden />
+          <Plus
+            className={cn("size-4 transition-transform duration-300", open && "rotate-45")}
+            aria-hidden
+          />
         </span>
       </button>
       <AnimatePresence initial={false}>

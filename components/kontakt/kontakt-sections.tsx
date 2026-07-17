@@ -12,8 +12,8 @@ export function ContactCards() {
       <div className="container-x">
         <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <StaggerItem className="h-full">
-            <div className="h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand">
+            <div className="h-full border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+              <div className="flex size-12 items-center justify-center bg-mist text-brand">
                 <MapPin className="size-5" strokeWidth={1.9} aria-hidden />
               </div>
               <h2 className="mt-5 font-display text-lg font-bold tracking-tight">Adres</h2>
@@ -35,8 +35,8 @@ export function ContactCards() {
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <div className="h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand">
+            <div className="h-full border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+              <div className="flex size-12 items-center justify-center bg-mist text-brand">
                 <Phone className="size-5" strokeWidth={1.9} aria-hidden />
               </div>
               <h2 className="mt-5 font-display text-lg font-bold tracking-tight">Telefon</h2>
@@ -53,8 +53,8 @@ export function ContactCards() {
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <div className="h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand">
+            <div className="h-full border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+              <div className="flex size-12 items-center justify-center bg-mist text-brand">
                 <Mail className="size-5" strokeWidth={1.9} aria-hidden />
               </div>
               <h2 className="mt-5 font-display text-lg font-bold tracking-tight">E-mail</h2>
@@ -69,8 +69,8 @@ export function ContactCards() {
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <div className="h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand">
+            <div className="h-full border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+              <div className="flex size-12 items-center justify-center bg-mist text-brand">
                 <Clock className="size-5" strokeWidth={1.9} aria-hidden />
               </div>
               <h2 className="mt-5 font-display text-lg font-bold tracking-tight">
@@ -110,7 +110,7 @@ export function MapSection() {
 
         <div className="mt-14 grid gap-6 lg:grid-cols-[1.5fr_1fr]">
           <Reveal>
-            <div className="h-[420px] overflow-hidden rounded-[2rem] border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] lg:h-full lg:min-h-[520px]">
+            <div className="h-[420px] overflow-hidden border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] lg:h-full lg:min-h-[520px]">
               <iframe
                 src={CONTACT.mapEmbedUrl}
                 title="Mapa dojazdu do mDM Rowery — Wolności 32, 62-045 Pniewy"
@@ -124,7 +124,7 @@ export function MapSection() {
           </Reveal>
 
           <Reveal delay={0.12} className="flex flex-col gap-6">
-            <figure className="group relative overflow-hidden rounded-[2rem] border border-black/[0.06] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+            <figure className="group relative overflow-hidden border border-black/[0.06] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
               <div className="relative aspect-[16/10]">
                 <Image
                   src="/images/storefront.jpg"
@@ -143,7 +143,7 @@ export function MapSection() {
               </figcaption>
             </figure>
 
-            <div className="flex-1 rounded-[2rem] border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+            <div className="flex-1 border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
               <h3 className="font-display text-lg font-bold tracking-tight">
                 Zanim przyjedziesz
               </h3>

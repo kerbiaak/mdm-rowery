@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Brands } from "@/components/home/brands";
 import {
   AccessoriesBanner,
-  BuyingHelp,
   CategoriesDetail,
 } from "@/components/oferta/oferta-sections";
 import { CtaBand } from "@/components/shared/cta-band";
@@ -32,7 +31,6 @@ export default function OfertaPage() {
       />
       <CategoriesDetail />
       <AccessoriesBanner />
-      <BuyingHelp />
       <Brands />
       <CtaBand
         word="Oferta"

@@ -37,7 +37,7 @@ export function Story() {
         </div>
 
         <Reveal delay={0.1} className="relative">
-          <div className="relative overflow-hidden rounded-[2rem] border border-black/[0.06] shadow-[0_30px_70px_-40px_rgba(0,0,0,0.45)]">
+          <div className="relative overflow-hidden border border-black/[0.06] shadow-[0_30px_70px_-40px_rgba(0,0,0,0.45)]">
             <div className="relative aspect-[16/9]">
               <Image
                 src="/images/storefront.jpg"
@@ -48,7 +48,7 @@ export function Story() {
               />
             </div>
           </div>
-          <div className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-2xl border border-black/[0.06] bg-white px-5 py-4 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.3)] sm:left-10">
+          <div className="absolute -bottom-6 left-6 flex items-center gap-3 border border-black/[0.06] bg-white px-5 py-4 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.3)] sm:left-10">
             <MapPin className="size-5 shrink-0 text-brand" aria-hidden />
             <p className="text-sm font-semibold leading-tight">
               Wolności 32, Pniewy
@@ -80,8 +80,8 @@ export function ValuesGrid() {
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {VALUES.map((value) => (
             <StaggerItem key={value.title} className="h-full">
-              <div className="group h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-                <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
+              <div className="group h-full border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+                <div className="flex size-12 items-center justify-center bg-mist text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
                   <value.icon className="size-5" strokeWidth={1.9} aria-hidden />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-bold tracking-tight">
@@ -119,9 +119,9 @@ export function Timeline() {
             >
               <span
                 aria-hidden
-                className="absolute -left-[41px] top-1 flex size-5 items-center justify-center rounded-full border-2 border-brand bg-white"
+                className="absolute -left-[41px] top-1 flex size-5 items-center justify-center border-2 border-brand bg-white"
               >
-                <span className="size-1.5 rounded-full bg-brand" />
+                <span className="size-1.5 bg-brand" />
               </span>
               <p className="font-display text-sm font-bold uppercase tracking-[0.2em] text-brand">
                 {entry.year}

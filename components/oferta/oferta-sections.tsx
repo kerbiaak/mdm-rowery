@@ -34,7 +34,7 @@ export function CategoriesDetail() {
               className="grid scroll-mt-28 items-center gap-10 lg:grid-cols-2 lg:gap-16"
             >
               <Reveal className={cn(i % 2 === 1 && "lg:order-2")}>
-                <div className="overflow-hidden rounded-[2rem] border border-black/[0.06] bg-white shadow-[0_25px_60px_-35px_rgba(0,0,0,0.25)]">
+                <div className="overflow-hidden border border-black/[0.06] bg-white shadow-[0_25px_60px_-35px_rgba(0,0,0,0.25)]">
                   <div className="relative aspect-[4/3]">
                     <Image
                       src={cat.img}
@@ -51,12 +51,7 @@ export function CategoriesDetail() {
 
               <div className={cn(i % 2 === 1 && "lg:order-1")}>
                 <Reveal>
-                  <span className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand">
-                    <cat.icon className="size-6" strokeWidth={1.8} aria-hidden />
-                  </span>
-                </Reveal>
-                <Reveal delay={0.06}>
-                  <h3 className="mt-5 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                  <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
                     {cat.title}
                   </h3>
                 </Reveal>
@@ -66,7 +61,7 @@ export function CategoriesDetail() {
                 <Stagger className="mt-6 space-y-3" delay={0.15}>
                   {cat.features.map((feature) => (
                     <StaggerItem key={feature} className="flex items-start gap-3">
-                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center bg-brand/10 text-brand">
                         <Check className="size-3" strokeWidth={3} aria-hidden />
                       </span>
                       <span className="text-[15px] text-zinc-700">{feature}</span>
@@ -95,7 +90,7 @@ export function AccessoriesBanner() {
         <Reveal>
           <Link
             href="/akcesoria"
-            className="group relative block overflow-hidden rounded-[2rem] shadow-[0_30px_70px_-40px_rgba(0,0,0,0.5)]"
+            className="group relative block overflow-hidden shadow-[0_30px_70px_-40px_rgba(0,0,0,0.5)]"
           >
             <div className="relative min-h-[300px] sm:aspect-[21/9] sm:min-h-0">
               <Image
@@ -134,70 +129,3 @@ export function AccessoriesBanner() {
   );
 }
 
-const BUYING_STEPS = [
-  {
-    n: "01",
-    title: "Porozmawiajmy",
-    desc: "Powiedz, gdzie i jak chcesz jeździć — zaproponujemy konkretne modele z salonu.",
-  },
-  {
-    n: "02",
-    title: "Przymiarka na miejscu",
-    desc: "Dobierzemy rozmiar ramy i ustawimy pozycję. Rower ma pasować jak dobre buty.",
-  },
-  {
-    n: "03",
-    title: "Odbiór i serwis",
-    desc: "Wyjeżdżasz na złożonym, wyregulowanym rowerze — a gwarancję obsługujemy u nas.",
-  },
-];
-
-export function BuyingHelp() {
-  return (
-    <section className="overflow-x-clip bg-white py-24 sm:py-32">
-      <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        <div>
-          <SectionHeader
-            eyebrow="Zakup bez stresu"
-            title={
-              <>
-                Nie wiesz, <Accent>który wybrać?</Accent>
-              </>
-            }
-            sub="Od tego jesteśmy. Kupno roweru w mDM to trzy proste kroki — i żadnych regałów z kartonami do samodzielnego złożenia."
-          />
-          <Stagger className="mt-11 space-y-8">
-            {BUYING_STEPS.map((step) => (
-              <StaggerItem key={step.n} className="flex gap-5">
-                <span className="font-display text-sm font-bold tracking-[0.2em] text-brand">
-                  {step.n}
-                </span>
-                <div>
-                  <h3 className="font-display text-lg font-bold tracking-tight">
-                    {step.title}
-                  </h3>
-                  <p className="mt-1.5 max-w-md text-[15px] leading-relaxed text-zinc-600">
-                    {step.desc}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
-        <Reveal delay={0.1}>
-          <div className="overflow-hidden rounded-[2rem] border border-black/[0.06] shadow-[0_25px_60px_-35px_rgba(0,0,0,0.25)]">
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/images/workshop.jpg"
-                alt="Warsztat mDM — regulacja roweru przed wydaniem"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}

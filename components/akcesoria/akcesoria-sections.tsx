@@ -25,8 +25,8 @@ export function AccessoryGroups() {
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" step={0.06}>
           {ACCESSORY_GROUPS.map((group) => (
             <StaggerItem key={group.title} className="h-full">
-              <div className="group flex h-full flex-col rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:border-black/10 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-                <div className="flex size-12 items-center justify-center rounded-2xl bg-mist text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
+              <div className="group flex h-full flex-col border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:border-black/10 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+                <div className="flex size-12 items-center justify-center bg-mist text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
                   <group.icon className="size-5" strokeWidth={1.9} aria-hidden />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-bold tracking-tight">
@@ -76,7 +76,7 @@ export function AccessoriesFeatured() {
             className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16"
           >
             <Reveal className={i % 2 === 1 ? "lg:order-2" : undefined}>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-[0_30px_70px_-40px_rgba(0,0,0,0.45)]">
+              <div className="relative aspect-[4/3] overflow-hidden shadow-[0_30px_70px_-40px_rgba(0,0,0,0.45)]">
                 <Image
                   src={row.img}
                   alt={row.alt}

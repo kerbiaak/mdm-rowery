@@ -25,7 +25,7 @@ export function Testimonials() {
               href={CONTACT.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 rounded-2xl border border-black/[0.06] bg-white p-4 pr-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.25)]"
+              className="group flex items-center gap-4 border border-black/[0.06] bg-white p-4 pr-6 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_45px_-20px_rgba(0,0,0,0.25)]"
             >
               <span className="font-display text-4xl font-bold tracking-tight">4,3</span>
               <span className="flex flex-col gap-1">
@@ -52,7 +52,7 @@ export function Testimonials() {
         <Stagger className="mt-14 grid gap-5 md:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <StaggerItem key={t.name} className="h-full">
-              <figure className="flex h-full flex-col rounded-3xl border border-black/[0.06] bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
+              <figure className="flex h-full flex-col border border-black/[0.06] bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
                 <div className="flex gap-1" aria-label={`Ocena ${t.stars} na 5`}>
                   {Array.from({ length: t.stars }).map((_, i) => (
                     <Star key={i} aria-hidden className="size-4 fill-amber-400 text-amber-400" />
