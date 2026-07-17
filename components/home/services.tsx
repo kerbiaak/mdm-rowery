@@ -21,7 +21,7 @@ export function HomeServices() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/85 to-ink/75" />
 
-      <div className="container-x relative grid items-start gap-14 lg:grid-cols-[1fr_1.35fr] lg:gap-20">
+      <div className="container-x relative grid items-center gap-14 lg:grid-cols-[1fr_1.7fr] lg:gap-20">
         <div>
           <SectionHeader
             dark
@@ -44,30 +44,33 @@ export function HomeServices() {
           </Reveal>
         </div>
 
-        <Stagger className="divide-y divide-white/10 border-y border-white/10" step={0.06}>
+        <Stagger
+          className="grid border-t border-white/10 md:grid-cols-2 md:gap-x-12"
+          step={0.05}
+        >
           {SERVICES.map((service) => (
-            <StaggerItem key={service.title}>
+            <StaggerItem key={service.title} className="border-b border-white/10">
               <Link
                 href="/serwis"
-                className="group flex items-center justify-between gap-8 py-7"
+                className="group flex h-full items-start justify-between gap-6 py-6"
               >
                 <div>
-                  <h3 className="font-display text-xl font-bold tracking-tight transition-colors duration-300 group-hover:text-brand sm:text-2xl">
+                  <h3 className="font-display text-lg font-bold tracking-tight transition-colors duration-300 group-hover:text-brand sm:text-xl">
                     {service.title}
                   </h3>
-                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-zinc-400">
+                  <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                     {service.desc}
                   </p>
                 </div>
                 <ArrowUpRight
-                  className="size-6 shrink-0 -translate-x-1 translate-y-1 text-brand opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                  className="mt-1.5 size-5 shrink-0 -translate-x-1 translate-y-1 text-brand opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
                   aria-hidden
                 />
               </Link>
             </StaggerItem>
           ))}
-          <StaggerItem>
-            <p className="py-6 text-sm text-zinc-500">
+          <StaggerItem className="md:col-span-2">
+            <p className="py-5 text-sm text-zinc-500">
               Dodatkowo: dorabianie kluczy, serwis skuterów i motorowerów, wymiana opon,
               centrowanie kół.
             </p>
