@@ -164,32 +164,32 @@ export const SERVICES: Service[] = [
   {
     icon: Wrench,
     title: "Naprawy rowerów",
-    desc: "Od wymiany dętki po generalny remont napędu. Sprawnie, uczciwie i z gwarancją na wykonaną pracę.",
+    desc: "Pełen zakres napraw: od wymiany dętki po kompletny remont napędu. Na wykonane prace udzielamy gwarancji.",
   },
   {
     icon: ClipboardCheck,
     title: "Przeglądy okresowe",
-    desc: "Regularna kontrola hamulców, przerzutek i łożysk — żeby drobiazg nie stał się kosztowną awarią.",
+    desc: "Kontrola i regulacja hamulców, przerzutek, napędu oraz łożysk zgodnie z zaleceniami producenta.",
   },
   {
     icon: Gauge,
     title: "Diagnostyka",
-    desc: "Stuka, trze, przeskakuje? Znajdziemy przyczynę, zanim zaczniemy cokolwiek wymieniać.",
+    desc: "Lokalizujemy źródło usterki przed rozpoczęciem naprawy. Wymieniamy wyłącznie części, które tego wymagają.",
   },
   {
     icon: PackageOpen,
     title: "Montaż i regulacja",
-    desc: "Składamy rowery z kartonu i regulujemy je pod Ciebie — siodło, kierownica, klamki, wszystko.",
+    desc: "Montaż nowych rowerów oraz indywidualne ustawienie pozycji: siodła, kierownicy i manetek.",
   },
   {
     icon: ShieldCheck,
     title: "Serwis gwarancyjny",
-    desc: "Autoryzowany serwis gwarancyjny rowerów z naszego salonu. Bez odsyłania i czekania tygodniami.",
+    desc: "Autoryzowana obsługa gwarancyjna rowerów zakupionych w naszym salonie, realizowana na miejscu.",
   },
   {
     icon: Sun,
     title: "Przygotowanie do sezonu",
-    desc: "Po zimie: smarowanie, regulacje, ciśnienie i kontrola bezpieczeństwa. Wiosną wsiadasz i jedziesz.",
+    desc: "Kompleksowy serwis po zimie: smarowanie, regulacje, ciśnienie opon i kontrola bezpieczeństwa.",
   },
 ];
 

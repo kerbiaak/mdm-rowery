@@ -66,6 +66,17 @@ await logFile(lightFile);
 const outMeta = await sharp(darkFile).metadata();
 report.push(`logo intrinsic: ${outMeta.width}x${outMeta.height} (trimmed from ${info.width}x${info.height})`);
 
+// --- Soft-focus workshop backdrop for the services section ---
+{
+  const blurWorkshop = path.join(OUT, "workshop-blur.jpg");
+  await sharp(src("serwis.png"))
+    .blur(12)
+    .modulate({ saturation: 0.94 })
+    .jpeg({ quality: 72, mozjpeg: true })
+    .toFile(blurWorkshop);
+  await logFile(blurWorkshop);
+}
+
 // --- Soft-focus showroom heroes (stylised backdrop, not a literal photo) ---
 const blurHero = path.join(OUT, "showroom-blur.jpg");
 await sharp(src("hero.png"))

@@ -6,12 +6,22 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { Accent, SectionHeader } from "@/components/shared/section-header";
 import { Button } from "@/components/ui/button";
-import { SERVICES, SERVICE_EXTRAS } from "@/lib/data";
+import { SERVICES } from "@/lib/data";
 
 export function HomeServices() {
   return (
-    <section className="bg-ink py-24 text-white sm:py-32">
-      <div className="container-x grid items-start gap-14 lg:grid-cols-[1fr_1.35fr] lg:gap-20">
+    <section className="relative overflow-hidden bg-ink py-24 text-white sm:py-32">
+      <Image
+        src="/images/workshop-blur.jpg"
+        alt=""
+        aria-hidden
+        fill
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/85 to-ink/75" />
+
+      <div className="container-x relative grid items-start gap-14 lg:grid-cols-[1fr_1.35fr] lg:gap-20">
         <div>
           <SectionHeader
             dark
@@ -21,7 +31,7 @@ export function HomeServices() {
                 Warsztat, któremu <Accent>zaufasz</Accent>
               </>
             }
-            sub="Autoryzowany serwis rowerów i jednośladów. Uczciwa wycena przed naprawą, sprawdzone części i terminy, na których można polegać."
+            sub="Autoryzowany serwis rowerów i jednośladów spalinowych. Zakres prac i wycenę przedstawiamy przed rozpoczęciem naprawy."
           />
           <Reveal delay={0.15} className="mt-9">
             <Button href="/serwis" variant="outlineLight" size="md">
@@ -31,17 +41,6 @@ export function HomeServices() {
                 aria-hidden
               />
             </Button>
-          </Reveal>
-          <Reveal delay={0.2} className="mt-12 hidden lg:block">
-            <div className="relative aspect-[4/3] overflow-hidden border border-white/10">
-              <Image
-                src="/images/workshop.jpg"
-                alt="Warsztat serwisowy mDM — rower na stojaku i ściana narzędzi"
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover"
-              />
-            </div>
           </Reveal>
         </div>
 
@@ -69,7 +68,8 @@ export function HomeServices() {
           ))}
           <StaggerItem>
             <p className="py-6 text-sm text-zinc-500">
-              Dodatkowo: {SERVICE_EXTRAS.join(" · ").toLowerCase()}.
+              Dodatkowo: dorabianie kluczy, serwis skuterów i motorowerów, wymiana opon,
+              centrowanie kół.
             </p>
           </StaggerItem>
         </Stagger>
