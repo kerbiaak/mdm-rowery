@@ -10,7 +10,7 @@ import { ACCESSORY_GROUPS, CONTACT } from "@/lib/data";
 
 export function AccessoryGroups() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           eyebrow="Asortyment"
@@ -68,7 +68,7 @@ const FEATURED = [
 
 export function AccessoriesFeatured() {
   return (
-    <section className="bg-mist py-24 sm:py-32">
+    <section className="bg-mist py-16 sm:py-24 lg:py-32">
       <div className="container-x space-y-20 lg:space-y-24">
         {FEATURED.map((row, i) => (
           <div

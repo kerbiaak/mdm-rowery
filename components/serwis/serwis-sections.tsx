@@ -8,7 +8,7 @@ import { CONTACT, FAQ, PROCESS, SERVICES, SERVICE_EXTRAS } from "@/lib/data";
 
 export function ServiceGrid() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           eyebrow="Zakres usług"
@@ -72,7 +72,7 @@ export function ServiceGrid() {
 
 export function ServiceProcess() {
   return (
-    <section className="bg-mist py-24 sm:py-32">
+    <section className="bg-mist py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           center
@@ -112,7 +112,7 @@ export function ServiceProcess() {
 
 export function ServiceFaq() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
         <SectionHeader
           eyebrow="FAQ"

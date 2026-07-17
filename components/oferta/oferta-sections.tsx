@@ -2,19 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Check, Phone } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { Accent, SectionHeader } from "@/components/shared/section-header";
 import { SpeedLines } from "@/components/shared/speed-lines";
-import { Button } from "@/components/ui/button";
-import { CATEGORIES, CONTACT } from "@/lib/data";
+import { CATEGORIES } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 const BIKE_CATEGORIES = CATEGORIES.filter((c) => c.slug !== "akcesoria");
 
 export function CategoriesDetail() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           eyebrow="Kategorie"
@@ -26,7 +25,7 @@ export function CategoriesDetail() {
           sub="Każdy rower przed wydaniem składamy, regulujemy i testujemy. Aktualne modele i ceny poznasz na miejscu — a przez telefon chętnie doradzimy, co mamy na stanie."
         />
 
-        <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-28">
+        <div className="mt-12 space-y-16 sm:mt-16 sm:space-y-20 lg:mt-20 lg:space-y-28">
           {BIKE_CATEGORIES.map((cat, i) => (
             <article
               key={cat.slug}
@@ -68,12 +67,6 @@ export function CategoriesDetail() {
                     </StaggerItem>
                   ))}
                 </Stagger>
-                <Reveal delay={0.2} className="mt-8">
-                  <Button href={CONTACT.phoneHref} variant="outline" size="md">
-                    <Phone className="size-4 text-brand" aria-hidden />
-                    Zapytaj o dostępność
-                  </Button>
-                </Reveal>
               </div>
             </article>
           ))}
@@ -85,7 +78,7 @@ export function CategoriesDetail() {
 
 export function AccessoriesBanner() {
   return (
-    <section className="bg-mist py-20 sm:py-24">
+    <section className="bg-mist py-14 sm:py-20">
       <div className="container-x">
         <Reveal>
           <Link

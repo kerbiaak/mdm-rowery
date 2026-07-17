@@ -10,7 +10,7 @@ import { SERVICES } from "@/lib/data";
 
 export function HomeServices() {
   return (
-    <section className="relative overflow-hidden bg-ink py-24 text-white sm:py-32">
+    <section className="relative overflow-hidden bg-ink py-16 text-white sm:py-24 lg:py-32">
       <Image
         src="/images/workshop-blur.jpg"
         alt=""

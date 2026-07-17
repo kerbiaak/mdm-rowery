@@ -25,7 +25,7 @@ export function CtaBand({ title, sub, primary, secondary, note, word = "mDM" }: 
       >
         {word}
       </span>
-      <div className="container-x relative py-24 text-center sm:py-28">
+      <div className="container-x relative py-16 text-center sm:py-24">
         <Reveal>
           <h2 className="mx-auto max-w-3xl font-display text-4xl font-bold tracking-tight text-white text-balance sm:text-5xl">
             {title}

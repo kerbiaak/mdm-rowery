@@ -41,7 +41,7 @@ export function Categories() {
     "flex size-11 items-center justify-center rounded-full border border-ink/15 text-ink transition-all duration-300 hover:border-ink hover:bg-ink hover:text-white disabled:pointer-events-none disabled:opacity-25";
 
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHeader
@@ -96,7 +96,7 @@ export function Categories() {
             {CATEGORIES.map((category) => (
               <div
                 key={category.slug}
-                className="w-[280px] shrink-0 snap-start sm:w-[320px] lg:w-[340px]"
+                className="w-[78vw] max-w-[300px] shrink-0 snap-start sm:w-[320px] sm:max-w-none lg:w-[340px]"
               >
                 <CategoryCard category={category} />
               </div>

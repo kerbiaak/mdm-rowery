@@ -63,7 +63,7 @@ export function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="container-x relative pb-28 pt-36"
+        className="container-x relative pb-24 pt-32 sm:pb-28 sm:pt-36"
       >
         <motion.p
           variants={item}

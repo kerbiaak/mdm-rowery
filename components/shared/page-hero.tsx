@@ -24,7 +24,7 @@ export function PageHero({
 }: PageHeroProps) {
   const reduce = useReducedMotion();
   return (
-    <section className="relative flex min-h-[58svh] items-end overflow-hidden bg-ink pb-14 pt-32 sm:pb-16">
+    <section className="relative flex min-h-[46svh] items-end overflow-hidden bg-ink pb-10 pt-28 sm:min-h-[58svh] sm:pb-16 sm:pt-32">
       <motion.div
         className="absolute inset-0"
         initial={reduce ? false : { scale: 1.07 }}

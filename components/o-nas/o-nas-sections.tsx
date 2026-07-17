@@ -8,7 +8,7 @@ import { TIMELINE, VALUES } from "@/lib/data";
 
 export function Story() {
   return (
-    <section className="overflow-x-clip bg-white py-24 sm:py-32">
+    <section className="overflow-x-clip bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <div>
           <SectionHeader
@@ -65,7 +65,7 @@ export function Story() {
 
 export function ValuesGrid() {
   return (
-    <section className="bg-mist py-24 sm:py-32">
+    <section className="bg-mist py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           center
@@ -99,7 +99,7 @@ export function ValuesGrid() {
 
 export function Timeline() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-16 sm:py-24 lg:py-32">
       <div className="container-x grid gap-14 lg:grid-cols-[1fr_1.8fr] lg:gap-20">
         <SectionHeader
           eyebrow="Droga"

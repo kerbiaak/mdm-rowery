@@ -8,7 +8,7 @@ import { CONTACT, HOURS } from "@/lib/data";
 
 export function ContactCards() {
   return (
-    <section className="bg-white py-24 sm:py-28">
+    <section className="bg-white py-16 sm:py-24">
       <div className="container-x">
         <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <StaggerItem className="h-full">
@@ -96,7 +96,7 @@ export function ContactCards() {
 
 export function MapSection() {
   return (
-    <section className="bg-mist py-24 sm:py-32">
+    <section className="bg-mist py-16 sm:py-24 lg:py-32">
       <div className="container-x">
         <SectionHeader
           eyebrow="Dojazd"
