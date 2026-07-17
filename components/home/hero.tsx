@@ -47,7 +47,7 @@ export function Hero() {
         initial={{ opacity: 0, x: reduce ? 0 : 90 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.7, duration: 1.1, ease: EASE }}
-        className="pointer-events-none absolute -right-24 top-[55%] hidden w-[46vw] max-w-[880px] -translate-y-1/2 xl:block"
+        className="pointer-events-none absolute -right-8 bottom-0 hidden w-[46vw] max-w-[880px] xl:block"
       >
         <Image
           src="/images/hero-bike.png"
