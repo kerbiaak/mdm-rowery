@@ -22,30 +22,33 @@ export function ServiceGrid() {
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
             <StaggerItem key={service.title} className="h-full">
-              <div className="group h-full rounded-3xl border border-black/[0.06] bg-white p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1 hover:border-black/10 hover:shadow-[0_28px_56px_-24px_rgba(0,0,0,0.2)]">
-                <div className="flex size-12 items-center justify-center rounded-xl bg-mist text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
-                  <service.icon className="size-5" strokeWidth={1.9} aria-hidden />
+              <div className="group flex h-full flex-col justify-between gap-10 border border-black/[0.08] bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-ink/40 hover:shadow-[0_28px_56px_-28px_rgba(0,0,0,0.22)] sm:aspect-square sm:p-8">
+                <service.icon className="size-6 text-brand" strokeWidth={1.7} aria-hidden />
+                <div>
+                  <h3 className="font-display text-lg font-bold tracking-tight sm:text-xl">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-600">
+                    {service.desc}
+                  </p>
                 </div>
-                <h3 className="mt-5 font-display text-lg font-bold tracking-tight">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-600">{service.desc}</p>
               </div>
             </StaggerItem>
           ))}
         </Stagger>
 
-        <Reveal delay={0.1} className="mt-10">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className="text-sm font-semibold text-zinc-500">Dodatkowo:</span>
+        <Reveal delay={0.1} className="mt-14">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+            Dodatkowo w warsztacie
+          </p>
+          <div className="mt-4 grid gap-px border border-black/[0.08] bg-black/[0.08] sm:grid-cols-2 lg:grid-cols-4">
             {SERVICE_EXTRAS.map((extra) => (
-              <span
+              <div
                 key={extra}
-                className="inline-flex items-center gap-2 rounded-full border border-black/[0.08] bg-mist px-4 py-2 text-sm font-medium text-zinc-700"
+                className="flex items-center justify-center bg-white px-6 py-5 text-center text-sm font-semibold text-zinc-700"
               >
-                <span aria-hidden className="size-1.5 rounded-full bg-brand" />
                 {extra}
-              </span>
+              </div>
             ))}
           </div>
         </Reveal>
