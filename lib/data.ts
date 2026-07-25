@@ -34,7 +34,7 @@ export const CONTACT = {
   city: "62-045 Pniewy",
   region: "woj. wielkopolskie",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Rowery+Skutery+MDM+Micha%C5%82+Gryka+Wolno%C5%9Bci+32+Pniewy",
+    "https://www.google.com/maps/search/?api=1&query=MDM+Micha%C5%82+Gryka+rowery+Wolno%C5%9Bci+32+Pniewy",
   mapEmbedUrl:
     "https://maps.google.com/maps?q=Wolno%C5%9Bci%2032%2C%2062-045%20Pniewy&z=16&output=embed",
 } as const;

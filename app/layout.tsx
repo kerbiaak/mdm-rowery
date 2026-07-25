@@ -67,7 +67,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BikeStore",
   name: "mDM Rowery",
-  alternateName: "Rowery Skutery MDM Michał Gryka",
+  alternateName: "MDM Michał Gryka",
   url: SITE_URL,
   image: `${SITE_URL}/images/storefront.jpg`,
   logo: `${SITE_URL}/images/logo.png`,
