@@ -1,6 +1,6 @@
 # mDM Rowery — strona internetowa
 
-Strona sklepu i serwisu rowerowego **mDM Rowery** (Rowery Skutery MDM Michał Gryka) w Pniewach — Wolności 32, 62-045 Pniewy.
+Strona sklepu i serwisu rowerowego **mDM Rowery** (MDM Michał Gryka) w Pniewach — Wolności 32, 62-045 Pniewy.
 
 ## Stack
 

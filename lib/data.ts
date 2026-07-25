@@ -25,7 +25,7 @@ export const SITE_URL =
 
 export const CONTACT = {
   name: "mDM Rowery",
-  legalName: "Rowery Skutery MDM Michał Gryka",
+  legalName: "MDM Michał Gryka",
   phoneDisplay: "502 744 955",
   phoneHref: "tel:+48502744955",
   email: "mdmgryka@o2.pl",
@@ -188,7 +188,6 @@ export const SERVICES: Service[] = [
 
 export const SERVICE_EXTRAS = [
   "Dorabianie kluczy",
-  "Serwis skuterów i motorowerów",
   "Wymiana opon od ręki",
   "Centrowanie kół",
 ] as const;
@@ -270,10 +269,6 @@ export const FAQ: FaqItem[] = [
     q: "Czy naprawiacie rowery kupione w innym sklepie?",
     a: "Oczywiście. Marka i miejsce zakupu nie mają znaczenia — każdy rower traktujemy tak samo.",
   },
-  {
-    q: "Czy zajmujecie się też skuterami?",
-    a: "Tak, jesteśmy autoryzowanym dealerem i serwisem pojazdów spalinowych. Skutery i motorowery obsługujemy w tym samym warsztacie.",
-  },
 ];
 
 export type AccessoryGroup = {
@@ -344,8 +339,8 @@ export const TIMELINE: TimelineEntry[] = [
   },
   {
     year: "2008",
-    title: "Autoryzowany dealer i serwis",
-    desc: "Rozszerzamy działalność o skutery i motorowery z pełną autoryzacją producentów.",
+    title: "Autoryzowany serwis",
+    desc: "Zdobywamy autoryzacje producentów i rozbudowujemy warsztat o profesjonalne narzędzia.",
   },
   {
     year: "2015",

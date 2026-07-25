@@ -54,7 +54,7 @@ export function ServiceGrid() {
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-zinc-500">
             Dodatkowo w warsztacie
           </p>
-          <div className="mt-4 grid gap-px border border-black/[0.08] bg-black/[0.08] sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-4 grid gap-px border border-black/[0.08] bg-black/[0.08] sm:grid-cols-3">
             {SERVICE_EXTRAS.map((extra) => (
               <div
                 key={extra}

@@ -28,7 +28,7 @@ export default function SerwisPage() {
             <span className="italic text-brand">jak na nowym</span>
           </>
         }
-        lead="Autoryzowany warsztat rowerów i jednośladów. Uczciwa wycena przed naprawą, sprawdzone części i terminy, których pilnujemy."
+        lead="Autoryzowany warsztat rowerowy. Uczciwa wycena przed naprawą, sprawdzone części i terminy, których pilnujemy."
       />
       <ServiceGrid />
       <ServiceProcess />

@@ -23,9 +23,9 @@ export function Story() {
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-zinc-600">
               <p>
                 mDM to firma Michała Gryki — pniewianina, który zamienił pasję do
-                jednośladów w codzienną robotę. Zaczynaliśmy od niewielkiego warsztatu
+                rowerów w codzienną robotę. Zaczynaliśmy od niewielkiego warsztatu
                 przy ulicy Wolności; dziś prowadzimy pełny salon z rowerami,
-                akcesoriami i autoryzowanym serwisem rowerów oraz skuterów.
+                akcesoriami i autoryzowanym serwisem rowerowym.
               </p>
               <p>
                 Przez te lata nauczyliśmy się jednego: klient nie kupuje ramy i dwóch

@@ -31,7 +31,7 @@ export function HomeServices() {
                 Warsztat, któremu <Accent>zaufasz</Accent>
               </>
             }
-            sub="Autoryzowany serwis rowerów i jednośladów spalinowych. Zakres prac i wycenę przedstawiamy przed rozpoczęciem naprawy."
+            sub="Autoryzowany serwis rowerowy. Zakres prac i wycenę przedstawiamy przed rozpoczęciem naprawy."
           />
           <Reveal delay={0.15} className="mt-9">
             <Button href="/serwis" variant="outlineLight" size="md">
@@ -71,8 +71,7 @@ export function HomeServices() {
           ))}
           <StaggerItem className="md:col-span-2">
             <p className="py-5 text-sm text-zinc-500">
-              Dodatkowo: dorabianie kluczy, serwis skuterów i motorowerów, wymiana opon,
-              centrowanie kół.
+              Dodatkowo: dorabianie kluczy, wymiana opon od ręki, centrowanie kół.
             </p>
           </StaggerItem>
         </Stagger>
