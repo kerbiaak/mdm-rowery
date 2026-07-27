@@ -107,7 +107,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "miejskie",
     title: "Rowery miejskie",
-    img: "/images/bike-trekking.webp",
+    img: "/images/bike-miejski.webp",
     fit: "contain",
     href: "/oferta#miejskie",
     desc: "Eleganckie i praktyczne. Niska rama, pełne wyposażenie i wygoda każdego dnia.",

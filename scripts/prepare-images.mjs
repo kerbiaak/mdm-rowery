@@ -50,8 +50,11 @@ await save(sharp(src("logo.png")).resize({ width: 480 }).png({ compressionLevel:
 
 await save(sharp(src("rower.webp")).webp({ quality: 88 }), "bike-mtb.webp");
 await save(sharp(src("2.webp")).webp({ quality: 88 }), "bike-kids.webp");
-await save(sharp(src("3.webp")).webp({ quality: 88 }), "bike-trekking.webp");
 await save(sharp(src("3.jpg")).jpeg({ quality: 86, mozjpeg: true }), "bike-gravel.jpg");
+await save(
+  sharp(src("damka.png")).linear(1.09, 0).resize({ width: 1600 }).webp({ quality: 86 }),
+  "bike-miejski.webp"
+);
 await save(sharp(src("4.webp")).resize({ width: 1600 }).webp({ quality: 84 }), "bike-city.webp");
 
 console.log(report.join("\n"));
