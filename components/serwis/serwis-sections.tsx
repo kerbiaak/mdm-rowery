@@ -121,7 +121,7 @@ export function ServiceFaq() {
               Częste <Accent>pytania</Accent>
             </>
           }
-          sub={`Nie znalazłeś odpowiedzi? Zadzwoń pod ${CONTACT.phoneDisplay} — powiemy wprost, czy i kiedy damy radę pomóc.`}
+          sub={`Nie znalazłeś odpowiedzi? Zadzwoń pod ${CONTACT.phoneDisplay}, powiemy wprost, czy i kiedy damy radę pomóc.`}
         />
         <Reveal delay={0.1}>
           <Accordion items={FAQ} />

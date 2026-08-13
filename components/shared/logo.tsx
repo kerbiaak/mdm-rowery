@@ -6,7 +6,7 @@ export function Logo({ light, className }: { light?: boolean; className?: string
   return (
     <Link
       href="/"
-      aria-label="mDM Rowery — strona główna"
+      aria-label="mDM Rowery, strona główna"
       className={cn("relative inline-flex shrink-0 items-center", className)}
     >
       <Image

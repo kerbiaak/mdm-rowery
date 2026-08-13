@@ -13,7 +13,7 @@ export default function NotFound() {
           Zjechałeś <span className="italic text-brand">z trasy</span>
         </h1>
         <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-zinc-400">
-          Ta strona nie istnieje albo zmieniła adres. Wracaj na główną — tam wszystko
+          Ta strona nie istnieje albo zmieniła adres. Wracaj na główną, tam wszystko
           stoi na swoim miejscu.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">

@@ -113,7 +113,7 @@ export function MapSection() {
             <div className="h-[420px] overflow-hidden border border-black/[0.06] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] lg:h-full lg:min-h-[520px]">
               <iframe
                 src={CONTACT.mapEmbedUrl}
-                title="Mapa dojazdu do mDM Rowery — Wolności 32, 62-045 Pniewy"
+                title="Mapa dojazdu do mDM Rowery, Wolności 32, 62-045 Pniewy"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
@@ -154,7 +154,7 @@ export function MapSection() {
                 </li>
                 <li className="flex gap-3">
                   <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-brand" />
-                  Wejście prowadzi z poziomu chodnika — wjedziesz rowerem bez przenoszenia.
+                  Wejście prowadzi z poziomu chodnika, wjedziesz rowerem bez przenoszenia.
                 </li>
                 <li className="flex gap-3">
                   <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-brand" />

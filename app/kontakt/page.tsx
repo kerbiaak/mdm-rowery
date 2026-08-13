@@ -16,14 +16,14 @@ export default function KontaktPage() {
     <>
       <PageHero
         image="/images/tyres.jpg"
-        imageAlt="Wnętrze sklepu rowerowego mDM — opony i akcesoria"
+        imageAlt="Wnętrze sklepu rowerowego mDM: opony i akcesoria"
         eyebrow="Kontakt"
         title={
           <>
             Porozmawiajmy o <span className="italic text-brand">Twoim rowerze</span>
           </>
         }
-        lead="Zadzwoń, napisz albo po prostu wpadnij — Wolności 32 w Pniewach, sześć dni w tygodniu."
+        lead="Zadzwoń, napisz albo po prostu wpadnij. Wolności 32 w Pniewach, sześć dni w tygodniu."
       />
       <ContactCards />
       <MapSection />

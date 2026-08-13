@@ -7,7 +7,7 @@ import { CONTACT } from "@/lib/data";
 export const metadata: Metadata = {
   title: "O nas",
   description:
-    "mDM Rowery — rodzinny sklep i serwis rowerowy Michała Gryki w Pniewach. Ponad 20 lat doświadczenia, uczciwe podejście i klienci, którzy wracają.",
+    "mDM Rowery: rodzinny sklep i serwis rowerowy Michała Gryki w Pniewach. Ponad 20 lat doświadczenia, uczciwe podejście i klienci, którzy wracają.",
   alternates: { canonical: "/o-nas" },
 };
 
@@ -23,7 +23,7 @@ export default function ONasPage() {
             Z pasji do <span className="italic text-brand">dwóch kółek</span>
           </>
         }
-        lead="Rodzinny sklep rowerowy z Pniew — ponad dwadzieścia lat doświadczenia i klienci, którzy przyprowadzają do nas już swoje dzieci."
+        lead="Rodzinny sklep rowerowy z Pniew. Ponad dwadzieścia lat doświadczenia i klienci, którzy przyprowadzają do nas już swoje dzieci."
       />
       <Story />
       <ValuesGrid />

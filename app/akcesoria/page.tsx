@@ -19,7 +19,7 @@ export default function AkcesoriaPage() {
     <>
       <PageHero
         image="/images/accessories.jpg"
-        imageAlt="Ściana akcesoriów rowerowych — kaski, sakwy, bidony i zapięcia"
+        imageAlt="Ściana akcesoriów rowerowych: kaski, sakwy, bidony i zapięcia"
         eyebrow="Akcesoria"
         title={
           <>
@@ -27,7 +27,7 @@ export default function AkcesoriaPage() {
             <span className="italic text-brand">Twój rower</span>
           </>
         }
-        lead="Kaski, oświetlenie, zapięcia, opony i części zamienne — przymierzysz, porównasz i zabierzesz od razu."
+        lead="Kaski, oświetlenie, zapięcia, opony i części zamienne. Przymierzysz, porównasz i zabierzesz od razu."
       />
       <AccessoryGroups />
       <AccessoriesFeatured />

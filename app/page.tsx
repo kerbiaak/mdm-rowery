@@ -8,7 +8,7 @@ import { CtaBand } from "@/components/shared/cta-band";
 import { CONTACT } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: { absolute: "mDM Rowery — Sklep i serwis rowerowy w Pniewach" },
+  title: { absolute: "mDM Rowery | Sklep i serwis rowerowy w Pniewach" },
   alternates: { canonical: "/" },
 };
 
@@ -26,7 +26,7 @@ export default function HomePage() {
             Gotowy na <em className="italic">nowy sezon?</em>
           </>
         }
-        sub="Wpadnij obejrzeć rowery albo zostaw swój na przegląd — jesteśmy na miejscu sześć dni w tygodniu."
+        sub="Wpadnij obejrzeć rowery albo zostaw swój na przegląd. Jesteśmy na miejscu sześć dni w tygodniu."
         primary={{ href: "/oferta", label: "Zobacz ofertę" }}
         secondary={{ href: CONTACT.phoneHref, label: `Zadzwoń: ${CONTACT.phoneDisplay}` }}
         note="Wolności 32, 62-045 Pniewy · pn–pt 9:00–18:00 · sob 9:00–13:00"

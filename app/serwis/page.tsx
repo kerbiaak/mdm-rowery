@@ -20,7 +20,7 @@ export default function SerwisPage() {
     <>
       <PageHero
         image="/images/workshop.jpg"
-        imageAlt="Warsztat serwisowy mDM — rower na stojaku i ściana narzędzi"
+        imageAlt="Warsztat serwisowy mDM: rower na stojaku i ściana narzędzi"
         eyebrow="Serwis"
         title={
           <>
@@ -37,7 +37,7 @@ export default function SerwisPage() {
         word="Serwis"
         title={
           <>
-            Zostaw rower — <em className="italic">resztę zrobimy my</em>
+            Zostaw rower, <em className="italic">resztę zrobimy my</em>
           </>
         }
         sub="Zadzwoń i umów termin albo podjedź w godzinach otwarcia. Drobne naprawy często robimy od ręki."

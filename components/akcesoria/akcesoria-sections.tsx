@@ -19,7 +19,7 @@ export function AccessoryGroups() {
               Wyposażenie <Accent>od kasku po opony</Accent>
             </>
           }
-          sub="Wszystko do codziennej jazdy znajdziesz na miejscu. A jeśli czegoś akurat brakuje — zamówimy pod Twój rower."
+          sub="Wszystko do codziennej jazdy znajdziesz na miejscu. A jeśli czegoś akurat brakuje, zamówimy pod Twój rower."
         />
 
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" step={0.06}>
@@ -50,15 +50,15 @@ const FEATURED = [
     alt: "Stos opon rowerowych Schwalbe w sklepie mDM",
     eyebrow: "Opony i dętki",
     title: "Guma na każdą nawierzchnię",
-    desc: "Schwalbe, Continental i Kenda — od szybkich opon szosowych po agresywny bieżnik MTB. Wymienimy od ręki w serwisie i podpowiemy właściwe ciśnienie.",
+    desc: "Schwalbe, Continental i Kenda: od szybkich opon szosowych po agresywny bieżnik MTB. Wymienimy od ręki w serwisie i podpowiemy właściwe ciśnienie.",
     cta: "Zapytaj o rozmiar",
   },
   {
     img: "/images/parts.jpg",
-    alt: "Komponenty rowerowe — kaseta, tarcza hamulcowa i narzędzia",
+    alt: "Komponenty rowerowe: kaseta, tarcza hamulcowa i narzędzia",
     eyebrow: "Części zamienne",
     title: "Serce roweru zawsze na stanie",
-    desc: "Łańcuchy, kasety, klocki, linki i pancerze mamy na półce. Rzadsze części zamawiamy pod konkretny model — zwykle w kilka dni roboczych.",
+    desc: "Łańcuchy, kasety, klocki, linki i pancerze mamy na półce. Rzadsze części zamawiamy pod konkretny model, zwykle w kilka dni roboczych.",
     cta: "Zapytaj o część",
   },
 ];

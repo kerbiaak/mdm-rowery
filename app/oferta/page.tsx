@@ -27,7 +27,7 @@ export default function OfertaPage() {
             Znajdź swój <span className="italic text-brand">następny rower</span>
           </>
         }
-        lead="Górskie, elektryczne, trekkingowe, miejskie i dziecięce — każdy złożony, wyregulowany i sprawdzony przed wydaniem."
+        lead="Górskie, elektryczne, trekkingowe, miejskie i dziecięce. Każdy złożony, wyregulowany i sprawdzony przed wydaniem."
       />
       <CategoriesDetail />
       <AccessoriesBanner />
@@ -39,7 +39,7 @@ export default function OfertaPage() {
             Najlepiej rozmawia się <em className="italic">przy rowerze</em>
           </>
         }
-        sub="Aktualne modele i ceny znajdziesz w salonie. Zadzwoń albo wpadnij — doradzimy bez zobowiązań."
+        sub="Aktualne modele i ceny znajdziesz w salonie. Zadzwoń albo wpadnij, doradzimy bez zobowiązań."
         primary={{ href: CONTACT.phoneHref, label: `Zadzwoń: ${CONTACT.phoneDisplay}` }}
         secondary={{ href: "/kontakt", label: "Jak dojechać" }}
       />

@@ -71,11 +71,11 @@ export const CATEGORIES: Category[] = [
     img: "/images/bike-mtb.webp",
     fit: "contain",
     href: "/oferta#gorskie",
-    desc: "Sztywne hardtaile i rowery do skakania — na leśne szlaki, wertepy i codzienną dawkę adrenaliny.",
+    desc: "Sztywne hardtaile i rowery do skakania. Na leśne szlaki, wertepy i codzienną dawkę adrenaliny.",
     features: [
       "Hardtaile i rowery dirtowe",
       "Hamulce tarczowe, amortyzacja przednia",
-      "Na szlaki wokół Jeziora Pniewskiego",
+      "Na leśne szlaki i bezdroża",
     ],
   },
   {
@@ -97,7 +97,7 @@ export const CATEGORIES: Category[] = [
     img: "/images/bike-gravel.jpg",
     fit: "contain",
     href: "/oferta#trekkingowe",
-    desc: "Komfort na długich dystansach — do pracy, nad jezioro i na weekendową wyprawę za miasto.",
+    desc: "Komfort na długich dystansach: do pracy, nad jezioro i na weekendową wyprawę za miasto.",
     features: [
       "Komfortowa geometria",
       "Bagażnik, błotniki i oświetlenie",
@@ -113,7 +113,7 @@ export const CATEGORIES: Category[] = [
     desc: "Eleganckie i praktyczne. Niska rama, pełne wyposażenie i wygoda każdego dnia.",
     features: [
       "Wyprostowana, wygodna pozycja",
-      "Niska rama — łatwe wsiadanie",
+      "Niska rama i łatwe wsiadanie",
       "Pełne wyposażenie miejskie",
     ],
   },
@@ -123,7 +123,7 @@ export const CATEGORIES: Category[] = [
     img: "/images/bike-kids.webp",
     fit: "contain",
     href: "/oferta#dzieciece",
-    desc: "Pierwsze rowery i kolejne rozmiary — lekkie, bezpieczne i dobrane do wzrostu dziecka.",
+    desc: "Pierwsze rowery i kolejne rozmiary. Lekkie, bezpieczne i dobrane do wzrostu dziecka.",
     features: [
       "Koła od 12 do 24 cali",
       "Lekkie ramy aluminiowe",
@@ -136,7 +136,7 @@ export const CATEGORIES: Category[] = [
     img: "/images/accessories.jpg",
     fit: "cover",
     href: "/akcesoria",
-    desc: "Kaski, oświetlenie, zapięcia, opony i części zamienne — wszystko, czego potrzebuje Twój rower.",
+    desc: "Kaski, oświetlenie, zapięcia, opony i części zamienne. Wszystko, czego potrzebuje Twój rower.",
     features: [
       "Kaski i oświetlenie",
       "Opony, dętki i części",
@@ -157,7 +157,7 @@ export const SERVICES: Service[] = [
   {
     icon: ClipboardCheck,
     title: "Przeglądy okresowe",
-    desc: "Sprawdzimy hamulce, przerzutki i łożyska, dokręcimy i nasmarujemy co trzeba. Odbierasz rower gotowy do jazdy.",
+    desc: "Sprawdzimy hamulce, przerzutki i łożyska, dokręcimy i nasmarujemy co trzeba.",
     img: "/images/service-2.jpg",
   },
   {
@@ -181,7 +181,7 @@ export const SERVICES: Service[] = [
   {
     icon: Sun,
     title: "Przygotowanie do sezonu",
-    desc: "Po zimie przesmarujemy, wyregulujemy i sprawdzimy, czy wszystko gra. Wiosną tylko wsiadasz i jedziesz.",
+    desc: "Po zimie przesmarujemy, wyregulujemy i sprawdzimy, czy wszystko gra.",
     img: "/images/service-6.jpg",
   },
 ];
@@ -255,7 +255,7 @@ export type FaqItem = { q: string; a: string };
 export const FAQ: FaqItem[] = [
   {
     q: "Czy muszę wcześniej umawiać się na serwis?",
-    a: "Najlepiej zadzwoń pod 502 744 955 albo po prostu podjedź. Drobne rzeczy często robimy od ręki, przy większych umówimy konkretny termin. Wiosną bywa kolejka, więc lepiej nie czekać do ostatniej chwili.",
+    a: "Najlepiej zadzwoń pod 502 744 955 albo po prostu podjedź. Drobne rzeczy często robimy od ręki, przy większych umówimy konkretny termin.",
   },
   {
     q: "Ile trwa standardowy przegląd?",
@@ -267,7 +267,7 @@ export const FAQ: FaqItem[] = [
   },
   {
     q: "Czy naprawiacie rowery kupione w innym sklepie?",
-    a: "Jasne. Nieważne, skąd masz rower — u nas każdy jest traktowany tak samo.",
+    a: "Jasne. Nieważne, skąd masz rower, u nas każdy jest traktowany tak samo.",
   },
 ];
 
@@ -282,7 +282,7 @@ export const ACCESSORY_GROUPS: AccessoryGroup[] = [
   {
     icon: HardHat,
     title: "Kaski i ochraniacze",
-    desc: "Dla dzieci i dorosłych — rozmiar dobierzemy na miejscu.",
+    desc: "Dla dzieci i dorosłych. Rozmiar dobierzemy na miejscu.",
     tags: "MTB · miejskie · dziecięce",
   },
   {
@@ -300,13 +300,13 @@ export const ACCESSORY_GROUPS: AccessoryGroup[] = [
   {
     icon: CircleDot,
     title: "Opony i dętki",
-    desc: "Schwalbe, Continental, Kenda — z wymianą od ręki w serwisie.",
+    desc: "Schwalbe, Continental i Kenda, z wymianą od ręki w serwisie.",
     tags: "szosa · MTB · miasto",
   },
   {
     icon: Backpack,
     title: "Sakwy i bagażniki",
-    desc: "Na codzienne zakupy i na dłuższą wyprawę — montaż przy zakupie gratis.",
+    desc: "Na codzienne zakupy i na dłuższą wyprawę. Montaż przy zakupie gratis.",
     tags: "sakwy · kosze · torby",
   },
   {
@@ -324,7 +324,7 @@ export const ACCESSORY_GROUPS: AccessoryGroup[] = [
   {
     icon: Cog,
     title: "Części zamienne",
-    desc: "Łańcuchy, kasety, klocki i linki od ręki — resztę zamówimy pod Twój model.",
+    desc: "Łańcuchy, kasety, klocki i linki od ręki. Resztę zamówimy pod Twój model.",
     tags: "napęd · hamulce · linki",
   },
 ];
@@ -335,7 +335,7 @@ export const TIMELINE: TimelineEntry[] = [
   {
     year: "2003",
     title: "Pierwsze naprawy",
-    desc: "Mały warsztat i kilka rowerów na stanie — tak przy ulicy Wolności zaczyna się mDM.",
+    desc: "Mały warsztat i kilka rowerów na stanie. Tak przy ulicy Wolności zaczyna się mDM.",
   },
   {
     year: "2008",
@@ -350,12 +350,12 @@ export const TIMELINE: TimelineEntry[] = [
   {
     year: "2021",
     title: "Era elektryków",
-    desc: "Do oferty wchodzą rowery elektryczne, a do warsztatu — serwis napędów e-bike.",
+    desc: "Do oferty wchodzą rowery elektryczne, a do warsztatu serwis napędów e-bike.",
   },
   {
     year: "Dziś",
     title: "Drugie pokolenie klientów",
-    desc: "Rowery, które sprzedaliśmy lata temu, wracają na przeglądy — z dziećmi naszych klientów.",
+    desc: "Rowery, które sprzedaliśmy lata temu, wracają na przeglądy, tym razem z dziećmi naszych klientów.",
   },
 ];
 

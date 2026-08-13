@@ -22,8 +22,8 @@ export function Story() {
           <Reveal delay={0.15}>
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-zinc-600">
               <p>
-                mDM to firma Michała Gryki — pniewianina, który zamienił pasję do
-                rowerów w codzienną robotę. Zaczynaliśmy od niewielkiego warsztatu
+                mDM to firma Michała Gryki, który pasję do rowerów zamienił w
+                codzienną robotę. Zaczynaliśmy od niewielkiego warsztatu
                 przy ulicy Wolności; dziś prowadzimy sklep z rowerami, akcesoriami
                 i warsztat, w którym naprawimy praktycznie wszystko.
               </p>
@@ -108,7 +108,7 @@ export function Timeline() {
               Dwie dekady <Accent>na dwóch kółkach</Accent>
             </>
           }
-          sub="Kilka dat, które ukształtowały mDM — od pierwszej naprawy po serwis rowerów elektrycznych."
+          sub="Kilka dat, które ukształtowały mDM: od pierwszej naprawy po serwis rowerów elektrycznych."
         />
         <div className="relative border-l-2 border-black/[0.07] pl-8">
           {TIMELINE.map((entry, i) => (

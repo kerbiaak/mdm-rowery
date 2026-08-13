@@ -22,7 +22,7 @@ export function CategoriesDetail() {
               Wybierz swój <Accent>styl jazdy</Accent>
             </>
           }
-          sub="Każdy rower przed wydaniem składamy, regulujemy i testujemy. Aktualne modele i ceny poznasz na miejscu — a przez telefon chętnie doradzimy, co mamy na stanie."
+          sub="Każdy rower przed wydaniem składamy, regulujemy i testujemy. Aktualne modele i ceny poznasz na miejscu, a przez telefon chętnie doradzimy, co mamy na stanie."
         />
 
         <div className="mt-12 space-y-16 sm:mt-16 sm:space-y-20 lg:mt-20 lg:space-y-28">
@@ -88,7 +88,7 @@ export function AccessoriesBanner() {
             <div className="relative min-h-[300px] sm:aspect-[21/9] sm:min-h-0">
               <Image
                 src="/images/accessories.jpg"
-                alt="Ściana akcesoriów rowerowych w sklepie mDM — kaski, sakwy i bidony"
+                alt="Ściana akcesoriów rowerowych w sklepie mDM: kaski, sakwy i bidony"
                 fill
                 sizes="100vw"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
@@ -104,8 +104,8 @@ export function AccessoriesBanner() {
                 Dopakuj swój rower
               </h3>
               <p className="mt-3 hidden max-w-sm leading-relaxed text-zinc-300 sm:block">
-                Kaski, oświetlenie, opony, sakwy i części zamienne — zobacz, co czeka na
-                ścianie akcesoriów.
+                Kaski, oświetlenie, opony, sakwy i części zamienne. Zobacz, co czeka
+                na ścianie akcesoriów.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 font-semibold text-white transition-colors duration-300 group-hover:text-brand">
                 Przejdź do akcesoriów
