@@ -17,7 +17,7 @@ export function ServiceGrid() {
               Wszystko, czego potrzebuje <Accent>Twój rower</Accent>
             </>
           }
-          sub="Od szybkiej wymiany dętki po pełne przygotowanie do sezonu. Pracujemy na sprawdzonych częściach i dajemy gwarancję na wykonaną robotę."
+          sub="Od szybkiej wymiany dętki po pełne przygotowanie do sezonu. Jak czegoś nie mamy na stanie, zamówimy i damy znać, kiedy wpadać."
         />
 
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

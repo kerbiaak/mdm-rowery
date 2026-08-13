@@ -27,7 +27,7 @@ export default function OfertaPage() {
             Znajdź swój <span className="italic text-brand">następny rower</span>
           </>
         }
-        lead="Górskie, elektryczne, trekkingowe, miejskie i dziecięce — składane, regulowane i objęte serwisem gwarancyjnym na miejscu."
+        lead="Górskie, elektryczne, trekkingowe, miejskie i dziecięce — każdy złożony, wyregulowany i sprawdzony przed wydaniem."
       />
       <CategoriesDetail />
       <AccessoriesBanner />

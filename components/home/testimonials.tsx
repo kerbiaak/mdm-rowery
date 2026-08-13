@@ -18,7 +18,7 @@ export function Testimonials() {
                 Klienci o <Accent>mDM</Accent>
               </>
             }
-            sub="Najlepszą reklamą jest rower, który wraca do nas tylko na przegląd — i klient, który wraca z sąsiadem."
+            sub="Najlepsza reklama to klienci, którzy wracają i polecają nas znajomym."
           />
           <Reveal delay={0.15}>
             <a

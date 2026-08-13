@@ -24,8 +24,8 @@ export function Footer() {
             className="h-14 w-auto"
           />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-zinc-400">
-            Rodzinny sklep i autoryzowany serwis rowerowy w Pniewach. Od ponad 20 lat pomagamy
-            wybrać rower — i dbamy o niego przez kolejne sezony.
+            Rodzinny sklep i serwis rowerowy w Pniewach. Od ponad 20 lat pomagamy
+            wybrać rower i dbamy o niego przez kolejne sezony.
           </p>
           <div className="mt-7 flex items-center gap-3">
             {SOCIALS.map(({ href, label, icon: Icon, external }) => (

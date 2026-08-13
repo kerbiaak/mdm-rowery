@@ -13,8 +13,8 @@ import {
   Lock,
   MapPin,
   PackageOpen,
-  ShieldCheck,
   Sun,
+  Zap,
   Umbrella,
   Wrench,
   type LucideIcon,
@@ -151,37 +151,37 @@ export const SERVICES: Service[] = [
   {
     icon: Wrench,
     title: "Naprawy rowerów",
-    desc: "Pełen zakres napraw: od wymiany dętki po kompletny remont napędu. Na wykonane prace udzielamy gwarancji.",
+    desc: "Od wymiany dętki po remont całego napędu. Mniejsze naprawy często robimy od ręki.",
     img: "/images/service-1.jpg",
   },
   {
     icon: ClipboardCheck,
     title: "Przeglądy okresowe",
-    desc: "Kontrola i regulacja hamulców, przerzutek, napędu oraz łożysk zgodnie z zaleceniami producenta.",
+    desc: "Sprawdzimy hamulce, przerzutki i łożyska, dokręcimy i nasmarujemy co trzeba. Odbierasz rower gotowy do jazdy.",
     img: "/images/service-2.jpg",
   },
   {
     icon: Gauge,
     title: "Diagnostyka",
-    desc: "Lokalizujemy źródło usterki przed rozpoczęciem naprawy. Wymieniamy wyłącznie części, które tego wymagają.",
+    desc: "Coś stuka albo przeskakuje? Najpierw znajdziemy przyczynę, zamiast od razu wymieniać części.",
     img: "/images/service-3.jpg",
   },
   {
     icon: PackageOpen,
     title: "Montaż i regulacja",
-    desc: "Montaż nowych rowerów oraz indywidualne ustawienie pozycji: siodła, kierownicy i manetek.",
+    desc: "Złożymy nowy rower i ustawimy go pod Ciebie: siodło, kierownicę i przerzutki.",
     img: "/images/service-4.jpg",
   },
   {
-    icon: ShieldCheck,
-    title: "Serwis gwarancyjny",
-    desc: "Autoryzowana obsługa gwarancyjna rowerów zakupionych w naszym salonie, realizowana na miejscu.",
+    icon: Zap,
+    title: "Serwis rowerów elektrycznych",
+    desc: "E-bike też ogarniemy: napęd, hamulce i podstawowa kontrola elektryki.",
     img: "/images/service-5.jpg",
   },
   {
     icon: Sun,
     title: "Przygotowanie do sezonu",
-    desc: "Kompleksowy serwis po zimie: smarowanie, regulacje, ciśnienie opon i kontrola bezpieczeństwa.",
+    desc: "Po zimie przesmarujemy, wyregulujemy i sprawdzimy, czy wszystko gra. Wiosną tylko wsiadasz i jedziesz.",
     img: "/images/service-6.jpg",
   },
 ];
@@ -231,22 +231,22 @@ export const PROCESS: ProcessStep[] = [
   {
     n: "01",
     title: "Przyjęcie i wycena",
-    desc: "Oglądamy rower przy Tobie i ustalamy zakres prac oraz orientacyjny koszt.",
+    desc: "Oglądamy rower przy Tobie i mówimy, co jest do zrobienia i mniej więcej za ile.",
   },
   {
     n: "02",
     title: "Diagnostyka",
-    desc: "Sprawdzamy napęd, hamulce i osprzęt — również to, czego nie widać gołym okiem.",
+    desc: "Sprawdzamy napęd, hamulce i osprzęt, także to, czego nie widać na pierwszy rzut oka.",
   },
   {
     n: "03",
     title: "Naprawa",
-    desc: "Pracujemy na sprawdzonych częściach. Gdy coś wykracza poza wycenę — najpierw dzwonimy.",
+    desc: "Jeśli w trakcie wyjdzie coś więcej, najpierw dzwonimy, potem naprawiamy.",
   },
   {
     n: "04",
     title: "Odbiór",
-    desc: "Krótka jazda próbna, kilka wskazówek na przyszłość i możesz ruszać w trasę.",
+    desc: "Krótka jazda próbna, parę wskazówek i możesz ruszać w trasę.",
   },
 ];
 
@@ -255,19 +255,19 @@ export type FaqItem = { q: string; a: string };
 export const FAQ: FaqItem[] = [
   {
     q: "Czy muszę wcześniej umawiać się na serwis?",
-    a: "Najlepiej zadzwoń pod 502 744 955. Drobne naprawy wykonujemy często od ręki, a przy większych ustalimy termin — wiosną kolejka bywa dłuższa, więc warto rezerwować z wyprzedzeniem.",
+    a: "Najlepiej zadzwoń pod 502 744 955 albo po prostu podjedź. Drobne rzeczy często robimy od ręki, przy większych umówimy konkretny termin. Wiosną bywa kolejka, więc lepiej nie czekać do ostatniej chwili.",
   },
   {
     q: "Ile trwa standardowy przegląd?",
-    a: "Zwykle 1–2 dni robocze, w zależności od sezonu i zakresu prac. Przy przyjęciu roweru podamy konkretny termin odbioru.",
+    a: "Zwykle dzień albo dwa, zależnie od tego, co się dzieje w warsztacie. Przy oddawaniu roweru powiemy, na kiedy będzie gotowy.",
   },
   {
     q: "Czy serwisujecie rowery elektryczne?",
-    a: "Tak. Zajmujemy się mechaniką e-bike'ów oraz podstawową diagnostyką napędów i baterii. Rowery elektryczne znajdziesz też w naszej ofercie sprzedaży.",
+    a: "Tak, e-bike'i też naprawiamy: mechanikę i podstawową elektrykę. Rowery elektryczne mamy zresztą również w sprzedaży.",
   },
   {
     q: "Czy naprawiacie rowery kupione w innym sklepie?",
-    a: "Oczywiście. Marka i miejsce zakupu nie mają znaczenia — każdy rower traktujemy tak samo.",
+    a: "Jasne. Nieważne, skąd masz rower — u nas każdy jest traktowany tak samo.",
   },
 ];
 
@@ -339,8 +339,8 @@ export const TIMELINE: TimelineEntry[] = [
   },
   {
     year: "2008",
-    title: "Autoryzowany serwis",
-    desc: "Zdobywamy autoryzacje producentów i rozbudowujemy warsztat o profesjonalne narzędzia.",
+    title: "Większy warsztat",
+    desc: "Rozbudowujemy warsztat i kompletujemy porządny zestaw narzędzi.",
   },
   {
     year: "2015",
@@ -370,7 +370,7 @@ export const VALUES: CompanyValue[] = [
   {
     icon: BadgeCheck,
     title: "Fachowość",
-    desc: "Autoryzacje producentów, właściwe narzędzia i wiedza zbierana od ponad dwóch dekad.",
+    desc: "Właściwe narzędzia i wiedza zbierana przez ponad dwadzieścia lat pracy przy rowerach.",
   },
   {
     icon: Clock,

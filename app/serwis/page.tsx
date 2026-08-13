@@ -11,7 +11,7 @@ import { CONTACT } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Serwis rowerowy",
   description:
-    "Autoryzowany serwis rowerowy w Pniewach: naprawy, przeglądy, diagnostyka, montaż i przygotowanie do sezonu. Uczciwa wycena przed naprawą. Tel. 502 744 955.",
+    "Serwis rowerowy w Pniewach: naprawy, przeglądy, diagnostyka, montaż i przygotowanie do sezonu. Uczciwa wycena przed naprawą. Tel. 502 744 955.",
   alternates: { canonical: "/serwis" },
 };
 
@@ -28,7 +28,7 @@ export default function SerwisPage() {
             <span className="italic text-brand">jak na nowym</span>
           </>
         }
-        lead="Autoryzowany warsztat rowerowy. Uczciwa wycena przed naprawą, sprawdzone części i terminy, których pilnujemy."
+        lead="Miejscowy warsztat z prawdziwego zdarzenia. Uczciwa wycena przed naprawą i terminy, których pilnujemy."
       />
       <ServiceGrid />
       <ServiceProcess />

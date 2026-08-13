@@ -31,7 +31,7 @@ export function HomeServices() {
                 Warsztat, któremu <Accent>zaufasz</Accent>
               </>
             }
-            sub="Autoryzowany serwis rowerowy. Zakres prac i wycenę przedstawiamy przed rozpoczęciem naprawy."
+            sub="Naprawiamy rowery od lat. Zanim weźmiemy się do pracy, powiemy wprost, co jest do zrobienia i ile to będzie kosztować."
           />
           <Reveal delay={0.15} className="mt-9">
             <Button href="/serwis" variant="outlineLight" size="md">

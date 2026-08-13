@@ -38,7 +38,7 @@ export default function AkcesoriaPage() {
             Przymierz, porównaj, <em className="italic">dotknij</em>
           </>
         }
-        sub="Kask musi leżeć, a sakwa pasować do bagażnika. Dlatego akcesoria najlepiej wybiera się na miejscu — z doradcą, nie z opisem produktu."
+        sub="Kask musi dobrze leżeć, a sakwa pasować do bagażnika. Dlatego najlepiej przymierzyć wszystko u nas na miejscu."
         primary={{ href: "/kontakt", label: "Odwiedź sklep" }}
         secondary={{ href: CONTACT.phoneHref, label: `Zadzwoń: ${CONTACT.phoneDisplay}` }}
       />

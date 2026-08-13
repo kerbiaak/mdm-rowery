@@ -85,8 +85,8 @@ export function Hero() {
           variants={item}
           className="mt-7 max-w-xl text-lg leading-relaxed text-zinc-300 sm:text-xl"
         >
-          Od ponad dwóch dekad pomagamy mieszkańcom Pniew i okolic wybrać idealny
-          rower — a potem dbamy o niego w naszym autoryzowanym serwisie.
+          Od ponad dwudziestu lat pomagamy mieszkańcom Pniew i okolic wybrać
+          dobry rower, a potem dbamy o niego w naszym warsztacie.
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">

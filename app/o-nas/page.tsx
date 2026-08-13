@@ -7,7 +7,7 @@ import { CONTACT } from "@/lib/data";
 export const metadata: Metadata = {
   title: "O nas",
   description:
-    "mDM Rowery — rodzinny sklep i autoryzowany serwis rowerowy Michała Gryki w Pniewach. Ponad 20 lat doświadczenia, uczciwe podejście i klienci, którzy wracają.",
+    "mDM Rowery — rodzinny sklep i serwis rowerowy Michała Gryki w Pniewach. Ponad 20 lat doświadczenia, uczciwe podejście i klienci, którzy wracają.",
   alternates: { canonical: "/o-nas" },
 };
 
@@ -23,7 +23,7 @@ export default function ONasPage() {
             Z pasji do <span className="italic text-brand">dwóch kółek</span>
           </>
         }
-        lead="Rodzinny sklep rowerowy z Pniew — dwie dekady doświadczenia, autoryzowany serwis i klienci, którzy przyprowadzają do nas swoje dzieci."
+        lead="Rodzinny sklep rowerowy z Pniew — ponad dwadzieścia lat doświadczenia i klienci, którzy przyprowadzają do nas już swoje dzieci."
       />
       <Story />
       <ValuesGrid />
@@ -35,7 +35,7 @@ export default function ONasPage() {
             Poznajmy się <em className="italic">przy Wolności 32</em>
           </>
         }
-        sub="Najlepiej opowiada się o rowerach między rowerami. Wpadnij na rozmowę — kawa z ekspresu, doradztwo gratis."
+        sub="Najlepiej rozmawia się o rowerach na miejscu, między rowerami. Wpadnij, wszystko pokażemy i doradzimy."
         primary={{ href: "/kontakt", label: "Dane kontaktowe i dojazd" }}
         secondary={{ href: CONTACT.phoneHref, label: `Zadzwoń: ${CONTACT.phoneDisplay}` }}
       />

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s — mDM Rowery",
   },
   description:
-    "Sklep i autoryzowany serwis rowerowy w Pniewach. Rowery górskie, elektryczne, trekkingowe, miejskie i dziecięce, akcesoria oraz fachowy serwis. Wolności 32, tel. 502 744 955.",
+    "Sklep i serwis rowerowy w Pniewach. Rowery górskie, elektryczne, trekkingowe, miejskie i dziecięce, akcesoria oraz naprawy. Wolności 32, tel. 502 744 955.",
   keywords: [
     "sklep rowerowy Pniewy",
     "serwis rowerowy Pniewy",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "mDM Rowery",
     title: "mDM Rowery — Sklep i serwis rowerowy w Pniewach",
     description:
-      "Rowery, akcesoria i autoryzowany serwis — od ponad 20 lat przy ulicy Wolności 32 w Pniewach.",
+      "Rowery, akcesoria i serwis — od ponad 20 lat przy ulicy Wolności 32 w Pniewach.",
     images: [
       {
         url: "/images/og.jpg",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "mDM Rowery — Sklep i serwis rowerowy w Pniewach",
-    description: "Rowery, akcesoria i autoryzowany serwis — Pniewy, Wolności 32.",
+    description: "Rowery, akcesoria i serwis — Pniewy, Wolności 32.",
     images: ["/images/og.jpg"],
   },
   robots: { index: true, follow: true },
