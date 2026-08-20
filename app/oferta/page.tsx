@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Brands } from "@/components/home/brands";
 import {
   AccessoriesBanner,
   CategoriesDetail,
@@ -31,7 +30,6 @@ export default function OfertaPage() {
       />
       <CategoriesDetail />
       <AccessoriesBanner />
-      <Brands />
       <CtaBand
         word="Oferta"
         title={

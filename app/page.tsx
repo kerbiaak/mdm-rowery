@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Brands } from "@/components/home/brands";
 import { Categories } from "@/components/home/categories";
 import { Hero } from "@/components/home/hero";
 import { HomeServices } from "@/components/home/services";
@@ -17,7 +16,6 @@ export default function HomePage() {
     <>
       <Hero />
       <Categories />
-      <Brands />
       <HomeServices />
       <Testimonials />
       <CtaBand

@@ -32,30 +32,8 @@ body {
   @apply mx-auto w-full max-w-[76rem] px-5 sm:px-8 lg:px-10;
 }
 
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 42s linear infinite;
-}
-
-.marquee:hover .animate-marquee {
-  animation-play-state: paused;
-}
-
-.marquee-mask {
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .animate-marquee {
-    animation: none;
   }
 }

@@ -14,7 +14,6 @@ import {
   MapPin,
   PackageOpen,
   Sun,
-  Zap,
   Umbrella,
   Wrench,
   type LucideIcon,
@@ -173,12 +172,6 @@ export const SERVICES: Service[] = [
     img: "/images/service-4.jpg",
   },
   {
-    icon: Zap,
-    title: "Serwis rowerów elektrycznych",
-    desc: "E-bike też ogarniemy: napęd, hamulce i podstawowa kontrola elektryki.",
-    img: "/images/service-5.jpg",
-  },
-  {
     icon: Sun,
     title: "Przygotowanie do sezonu",
     desc: "Po zimie przesmarujemy, wyregulujemy i sprawdzimy, czy wszystko gra.",
@@ -190,19 +183,6 @@ export const SERVICE_EXTRAS = [
   "Dorabianie kluczy",
   "Wymiana opon od ręki",
   "Centrowanie kół",
-] as const;
-
-export const BRANDS = [
-  "Tabou",
-  "Kross",
-  "Merida",
-  "Romet",
-  "Unibike",
-  "Kands",
-  "Kellys",
-  "Shimano",
-  "Schwalbe",
-  "Continental",
 ] as const;
 
 export type Testimonial = { name: string; text: string; stars: number };
