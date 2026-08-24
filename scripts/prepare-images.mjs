@@ -48,13 +48,24 @@ await save(sharp(src("opony.png")).jpeg({ quality: 82, mozjpeg: true }), "tyres.
 
 await save(sharp(src("logo.png")).resize({ width: 480 }).png({ compressionLevel: 9 }), "logo.png");
 
-await save(sharp(src("rower.webp")).webp({ quality: 88 }), "bike-mtb.webp");
-await save(sharp(src("2.webp")).webp({ quality: 88 }), "bike-kids.webp");
-await save(sharp(src("3.jpg")).jpeg({ quality: 86, mozjpeg: true }), "bike-gravel.jpg");
-await save(
-  sharp(src("damka.png")).linear(1.09, 0).resize({ width: 1600 }).webp({ quality: 86 }),
-  "bike-miejski.webp"
-);
-await save(sharp(src("4.webp")).resize({ width: 1600 }).webp({ quality: 84 }), "bike-city.webp");
+// Katalog rowerów – zdjęcia produktowe UNIBIKE (jednolite tło #f7f7f7 rozjaśnione do bieli).
+const BIKES = [
+  ["mtbsport.webp", "bike-gorskie.webp"],
+  ["ebike.webp", "bike-elektryczne.webp"],
+  ["tekking.webp", "bike-trekkingowe.webp"],
+  ["cross.webp", "bike-miejskie.webp"],
+  ["kid.webp", "bike-dzieciece.webp"],
+];
+
+for (const [from, to] of BIKES) {
+  await save(
+    sharp(src(from))
+      .linear(255 / 247, 0)
+      .trim({ threshold: 8 })
+      .resize({ width: 1600, withoutEnlargement: true })
+      .webp({ quality: 86 }),
+    to
+  );
+}
 
 console.log(report.join("\n"));

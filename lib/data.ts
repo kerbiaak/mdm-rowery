@@ -67,7 +67,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "gorskie",
     title: "Rowery górskie",
-    img: "/images/bike-mtb.webp",
+    img: "/images/bike-gorskie.webp",
     fit: "contain",
     href: "/oferta#gorskie",
     desc: "Sztywne hardtaile i rowery do skakania. Na leśne szlaki, wertepy i codzienną dawkę adrenaliny.",
@@ -80,7 +80,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "elektryczne",
     title: "Rowery elektryczne",
-    img: "/images/bike-city.webp",
+    img: "/images/bike-elektryczne.webp",
     fit: "contain",
     href: "/oferta#elektryczne",
     desc: "Wspomaganie, które zmienia wszystko. Dojazdy bez potu i wycieczki bez limitu kilometrów.",
@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "trekkingowe",
     title: "Rowery trekkingowe",
-    img: "/images/bike-gravel.jpg",
+    img: "/images/bike-trekkingowe.webp",
     fit: "contain",
     href: "/oferta#trekkingowe",
     desc: "Komfort na długich dystansach: do pracy, nad jezioro i na weekendową wyprawę za miasto.",
@@ -106,7 +106,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "miejskie",
     title: "Rowery miejskie",
-    img: "/images/bike-miejski.webp",
+    img: "/images/bike-miejskie.webp",
     fit: "contain",
     href: "/oferta#miejskie",
     desc: "Eleganckie i praktyczne. Niska rama, pełne wyposażenie i wygoda każdego dnia.",
@@ -119,7 +119,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "dzieciece",
     title: "Rowery dziecięce",
-    img: "/images/bike-kids.webp",
+    img: "/images/bike-dzieciece.webp",
     fit: "contain",
     href: "/oferta#dzieciece",
     desc: "Pierwsze rowery i kolejne rozmiary. Lekkie, bezpieczne i dobrane do wzrostu dziecka.",
